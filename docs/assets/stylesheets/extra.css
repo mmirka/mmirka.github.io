@@ -1,0 +1,455 @@
+/* ---------------------------------------------------------------------------
+   Palette: "teal and ochre".
+
+   Material only ships named colour schemes and neither of these is among them,
+   so `mkdocs.yml` sets `primary: custom` / `accent: custom` and the values are
+   defined here. Every variable below is one Material already reads; nothing
+   here invents a new theming mechanism.
+
+   The two hues are chosen against the figures, not in isolation. All 166 plots
+   on this site are default matplotlib, so they are tab10 blue (#1f77b4) and
+   orange (#ff7f0e) on white. The teal is far enough from that blue that site
+   chrome never reads as plot ink; the ochre is close enough to that orange
+   that the chrome and the figures look like one family.
+   --------------------------------------------------------------------------- */
+
+:root {
+  /* Headings only. The body face is Inter and the mono face IBM Plex Mono,
+     both set through `theme.font` in mkdocs.yml. */
+  --pf-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+[data-md-color-scheme="default"] {
+  --pf-surface: #f6f3eb;
+  --pf-rule: #e2dccf;
+  /* Text that sits on --md-primary-fg-color. Distinct from
+     --md-primary-bg-color, which is the header's own text colour: in dark mode
+     the header keeps a dark ground while the primary becomes a light teal, so
+     the two part company. */
+  --pf-on-primary: #f4f1ea;
+
+  --md-default-bg-color: #fcfbf7;
+  --md-default-fg-color: #141719;
+  --md-default-fg-color--light: #4a5054;
+  --md-default-fg-color--lighter: #8a9095;
+  --md-default-fg-color--lightest: #e2dccf;
+
+  --md-typeset-color: #141719;
+  --md-typeset-a-color: #14464a;
+
+  --md-primary-fg-color: #14464a;
+  --md-primary-fg-color--light: #1e5f64;
+  --md-primary-fg-color--dark: #0e3134;
+  --md-primary-bg-color: #f4f1ea;
+  --md-primary-bg-color--light: #c9dad8;
+
+  --md-accent-fg-color: #c6784a;
+  --md-accent-fg-color--transparent: rgba(198, 120, 74, 0.1);
+  --md-accent-bg-color: #fcfbf7;
+
+  --md-code-bg-color: #f3f0e7;
+  --md-code-fg-color: #24303a;
+
+  --md-footer-bg-color: #14464a;
+  --md-footer-bg-color--dark: #0e3134;
+}
+
+[data-md-color-scheme="slate"] {
+  --pf-surface: #191d24;
+  --pf-rule: #2a3038;
+  --pf-on-primary: #0e1b1d;
+
+  --md-default-bg-color: #12151a;
+  --md-default-fg-color: #e8e6e1;
+  --md-default-fg-color--light: #a7adb4;
+  --md-default-fg-color--lighter: #6e767e;
+  --md-default-fg-color--lightest: #2a3038;
+
+  --md-typeset-color: #e8e6e1;
+  --md-typeset-a-color: #7fb8b4;
+
+  --md-primary-fg-color: #7fb8b4;
+  --md-primary-fg-color--light: #9cccc8;
+  --md-primary-fg-color--dark: #14272a;
+  --md-primary-bg-color: #dce7e5;
+  --md-primary-bg-color--light: #8fa8a6;
+
+  --md-accent-fg-color: #e0975f;
+  --md-accent-fg-color--transparent: rgba(224, 151, 95, 0.14);
+  --md-accent-bg-color: #12151a;
+
+  --md-code-bg-color: #1b2027;
+  --md-code-fg-color: #d6dbe0;
+
+  --md-footer-bg-color: #14272a;
+  --md-footer-bg-color--dark: #0a1315;
+}
+
+/* In light mode the header takes --md-primary-fg-color, which is the teal we
+   want. In dark it would take the *light* teal and become a bright bar, so the
+   header keeps its own near-black ground there instead. */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #14272a;
+}
+
+/* ---------------------------------------------------------------------------
+   Typography: serif headings over a sans body.
+
+   `theme.font` cannot express this split: it sets one family for headings and
+   body alike. So Inter comes from `theme.font.text` and the serif is applied
+   here, to h1-h4 only. h5/h6 are Material's small uppercase labels, which a
+   serif does not suit.
+   --------------------------------------------------------------------------- */
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--pf-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Material greys h1 out to --md-default-fg-color--light and sets it at weight
+   300. As a page title in serif it wants full ink and the same weight as the
+   headings under it. */
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-size: 1.85rem;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2rem;
+}
+
+.md-typeset {
+  line-height: 1.7;
+}
+
+/* No max-width on running prose: measured in the browser, `.md-content__inner`
+   is 688px at every viewport, because the nav/content/TOC layout already
+   constrains it. Any cap wide enough not to fight the tables never bites, so
+   the rule would be dead CSS.
+   --------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+   Chrome in monospace.
+
+   The site is half plotting recipes and repository links, so its navigation
+   labels are set in the code face. This is where the notebook register lives:
+   it needs no markup, only the elements the theme already emits.
+   --------------------------------------------------------------------------- */
+
+.md-header {
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-family: var(--pf-serif);
+  font-weight: 600;
+}
+
+.md-tabs__link {
+  font-family: var(--md-code-font-family);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.15rem;
+}
+
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+/* Material marks the *parent* `.md-tabs__item--active`, not the link. Some
+   versions also set `--active` on the link itself, so match both; targeting
+   only the link renders no underline at all, silently. */
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  opacity: 1;
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* "Table of contents", and the section headings in the left-hand nav. */
+.md-nav__title {
+  font-family: var(--md-code-font-family);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.md-copyright {
+  font-family: var(--md-code-font-family);
+  font-size: 0.6rem;
+}
+
+/* Every collapsible block on this site is a source file: the title is always
+   a path like `figures/results_analysis_date2022.py`, so it belongs in the
+   code face rather than the prose face. */
+.md-typeset details > summary {
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Tables: hairline rules instead of Material's filled header slab.
+
+   This matters most in the vendored thesis chapters, where a figure panel's
+   caption is itself a one-cell table header (`| (b) Power at saturation. |`).
+   Material renders that as a dark slab; here it reads as the caption it is.
+   Layout is untouched on purpose, see the table-layout rules further down,
+   which the panel grids depend on.
+   --------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) {
+  border: none;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: transparent;
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+  border-bottom: 1px solid var(--pf-rule);
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--pf-rule);
+}
+
+/* Soften the corner of every figure so a white matplotlib plate has an edge
+   rather than butting straight against the dark ground. All 97 SVGs and 69
+   PNGs already carry a white background of their own, so nothing here is
+   rescuing an unreadable figure, it is only giving it a border. */
+[data-md-color-scheme="slate"] .md-typeset img {
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------------------------
+   Figure panels laid out as GFM tables.
+   Copied from mmirka/thesis-md so the vendored chapters render identically
+   here. These rules only affect the built site; the GitHub view falls back to
+   a plain table, which is still readable.
+   --------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) td img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Panel grids should share width evenly rather than sizing to content. */
+.md-typeset table:not([class]) {
+  table-layout: fixed;
+}
+
+/* Wide data tables (Table 3.1 is seven columns) scroll instead of
+   overflowing the page. */
+.md-typeset__table {
+  overflow-x: auto;
+}
+
+/* Figure captions sit directly under the image; keep them tied to it. */
+.md-typeset p > strong:first-child {
+  scroll-margin-top: 4rem;
+}
+
+/* Anchors are empty <a id> elements; make sure a deep link lands below the
+   sticky header. */
+.md-typeset a[id]:empty {
+  display: block;
+  position: relative;
+  top: -4rem;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 76.1875em) {
+  /* On narrow screens a four-panel grid is unreadable at fixed width. */
+  .md-typeset table:not([class]) {
+    table-layout: auto;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Dataviz gallery: a thumbnail wall in the matplotlib-gallery idiom.
+   Markup (md_in_html):
+
+     <div class="gallery" markdown>
+     [![alt](../assets/figures/x/y.png)<br>Caption](page.md){ .gallery-item }
+     </div>
+   --------------------------------------------------------------------------- */
+
+.md-typeset .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+/* Markdown collects consecutive link lines into ONE paragraph, which would
+   otherwise be the grid's only child, every thumbnail stacked in a single
+   column. `display: contents` dissolves that wrapper so the anchors themselves
+   become the grid items. Works whether the source separates items by newlines
+   or by blank lines. */
+.md-typeset .gallery > p {
+  display: contents;
+}
+
+.md-typeset .gallery .gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.6rem;
+  border: 1px solid var(--pf-rule);
+  border-radius: 0.3rem;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  background: var(--md-default-bg-color);
+  transition: border-color 125ms, transform 125ms;
+}
+
+.md-typeset .gallery .gallery-item:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+}
+
+.md-typeset .gallery .gallery-item img {
+  width: 100%;
+  height: 140px;
+  /* `contain` rather than `cover`: a cropped axis label is worse than
+     letterboxing on a plot thumbnail. */
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 0.45rem;
+  /* Most figures are matplotlib PNGs with a white ground. In dark mode that
+     white block is the point of the thumbnail, so give it a neutral mat
+     rather than inverting the colours of the plotted data. */
+  background: #fff;
+  border-radius: 0.1rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Language switch: the thesis is carried in both editions, so every thesis
+   page pairs with its counterpart. The current edition is a non-clickable
+   <span>; the other is the link.
+   --------------------------------------------------------------------------- */
+
+.md-typeset .lang-switch {
+  display: inline-flex;
+  gap: 0;
+  margin: 0 0 1.2rem;
+  border: 1px solid var(--pf-rule);
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: var(--md-code-font-family);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+/* md_in_html wraps the div's Markdown content in a <p>, which would otherwise
+   be the flex container's only child. */
+.md-typeset .lang-switch > p {
+  display: contents;
+}
+
+.md-typeset .lang-switch .lang-pill {
+  padding: 0.35rem 0.85rem;
+  text-decoration: none;
+  color: var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color);
+  transition: background-color 125ms, color 125ms;
+  white-space: nowrap;
+}
+
+.md-typeset .lang-switch .lang-pill:not(.is-current):hover {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .lang-switch .lang-pill.is-current {
+  background: var(--md-primary-fg-color);
+  color: var(--pf-on-primary);
+  font-weight: 500;
+  cursor: default;
+}
+
+/* ---------------------------------------------------------------------------
+   Thesis panel: the callout that frames vendored chapters as a mirror of
+   mmirka/thesis-md rather than as original content of this site.
+   --------------------------------------------------------------------------- */
+
+.md-typeset .thesis-panel {
+  border-left: 3px solid var(--md-primary-fg-color);
+  background: var(--pf-surface);
+  padding: 0.7rem 1rem;
+  margin: 1rem 0 1.6rem;
+  border-radius: 0;
+  font-size: 0.75rem;
+}
+
+.md-typeset .thesis-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Home page: the three-project arc as cards.
+   --------------------------------------------------------------------------- */
+
+.md-typeset .cards {
+  display: grid;
+  /* auto-fill, not auto-fit: a section with a single card (Projects' "Dynamic
+     control") would otherwise collapse the empty track and stretch that one
+     card the full width of the column. */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.md-typeset .cards > * {
+  border: none;
+  border-left: 2px solid var(--md-primary-fg-color);
+  background: var(--pf-surface);
+  padding: 0.9rem 1.1rem;
+  transition: border-color 125ms, background-color 125ms;
+}
+
+.md-typeset .cards > *:hover {
+  border-left-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .cards h3 {
+  font-size: 1rem;
+}
+
+/* Card thumbnails, on the same terms as the gallery tiles: `contain` rather
+   than `cover`, because a cropped axis label is worse than letterboxing, and a
+   white mat so a matplotlib plate keeps its own ground in dark mode. */
+.md-typeset .cards img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  border-radius: 0.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.md-typeset .cards > * > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .cards > * > :last-child {
+  margin-bottom: 0;
+}

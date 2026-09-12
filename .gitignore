@@ -1,0 +1,14 @@
+# MkDocs build output, regenerate with `mkdocs build`
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environments
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+*.swp

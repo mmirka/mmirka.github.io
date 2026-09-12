@@ -1,0 +1,9 @@
+# Site generation. Versions match the thesis source so the vendored thesis
+# chapters render identically here and in their own site.
+#
+# mkdocs is pinned below 2.0: that release removes the plugin system and the
+# theming system with no migration path, so an unpinned CI install would break
+# this build without a code change here.
+mkdocs>=1.6,<2.0
+mkdocs-material>=9.5,<10
+pymdown-extensions>=10.7,<11

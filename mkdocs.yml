@@ -1,0 +1,163 @@
+site_name: Maxime Mirka
+site_description: >-
+  Portfolio of Maxime Mirka, PhD in computer engineering (Université de
+  Montpellier, 2021). Machine learning for multi-level adaptive control of
+  distributed computing: reinforcement-learning control of OpenMP energy
+  efficiency, and generative models for network-on-chip topology design.
+site_author: Maxime Mirka
+site_url: https://mmirka.github.io/
+repo_url: https://github.com/mmirka
+repo_name: mmirka
+docs_dir: docs
+
+# Rendered into the footer of every page. The repo's LICENSE and README carry
+# the full split; this is the one-line version a visitor actually sees.
+copyright: >-
+  &copy; 2026 Maxime Mirka &mdash; code
+  <a href="https://github.com/mmirka/mmirka.github.io/blob/main/LICENSE">MIT</a>,
+  content <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Inter
+    code: IBM Plex Mono
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - search.highlight
+    - navigation.instant
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-night, name: Switch to dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle: {icon: material/weather-sunny, name: Switch to light mode}
+
+plugins:
+  - search
+
+# Copied verbatim from the thesis source so the chapters render
+# identically here and in their own site.
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      # Reproduces GitHub's heading slugger, so one anchor works both in the
+      # built site and when the same file is browsed on github.com.
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.snippets:
+      base_path: [docs]
+      check_paths: true
+  # NOT pymdownx.smartsymbols: it rewrites the figure panel label
+  # "(c)" into the copyright sign, and "(r)" into (R).
+
+extra_css:
+  # Source Serif 4, for headings only. `theme.font` above cannot express a
+  # heading/body split, so the serif comes in here and extra.css applies it.
+  - "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mmirka
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/maxime-mirka-phd-1a3324116
+      name: LinkedIn
+    - icon: fontawesome/solid/graduation-cap
+      link: https://cv.hal.science/maxime-mirka
+      name: HAL
+
+nav:
+  - Home: index.md
+  - Projects:
+      - projects/index.md
+      - Online RL control of OpenMP energy efficiency: projects/omp-energy-rl.md
+      - GANNoC: projects/gannoc.md
+      - M-RWGAN: projects/m-rwgan.md
+  - Figures:
+      - dataviz/index.md
+      - Distributions:
+          - Overlaid histograms: dataviz/distributions-histogram.md
+          - Box plots from precomputed statistics: dataviz/distributions-box-whisker.md
+      - Scatter:
+          - Two-axis error bars: dataviz/scatter-errorbars.md
+          - Annotated points with error ellipses: dataviz/scatter-annotated.md
+          - Two coloured series against a frontier: dataviz/scatter-pareto-front.md
+      - Lines and time series:
+          - Rebuilding a mismatched x-axis: dataviz/lines-training-curves.md
+          - One plot, five renders from a style table: dataviz/lines-restyling.md
+          - Multi-curve overlay with a legend strip: dataviz/lines-multi-series.md
+          - Stacked panels on a shared time axis: dataviz/timeseries-stacked-panels.md
+          - Colouring a line by a category: dataviz/timeseries-categorical-overlay.md
+      - Bar charts:
+          - Value labels measured off the bars: dataviz/bars-annotated.md
+          - Grouped bars with a summary group: dataviz/bars-grouped.md
+      - Heatmaps and small multiples:
+          - A row on one shared colour scale: dataviz/heatmap-row-over-time.md
+          - Small multiples over a parameter sweep: dataviz/heatmap-panel-grid.md
+          - Two colour scales in one row: dataviz/heatmap-dual-colorbars.md
+          - A grid of binary matrices: dataviz/heatmap-binary-matrix.md
+      - 3-D:
+          - Surface beside its own heat map: dataviz/surface-3d.md
+      - Graphs:
+          - Graph drawings on a subplot grid: dataviz/graph-network-layout.md
+      - Keras:
+          - Rendering a model as a layer diagram: dataviz/keras-model-diagram.md
+  - Publications: publications/index.md
+  - Teaching: teaching/index.md
+  - Resume: resume/index.md
+  - Thesis:
+      - thesis/index.md
+      - Abstract: thesis/abstract.md
+      - Acknowledgements: thesis/acknowledgements.md
+      - 1. Introduction: thesis/01-introduction.md
+      - 2. Research axes and problems addressed: thesis/02-research-axes.md
+      - 3. State of the art: thesis/03-state-of-the-art.md
+      - 4. Energy efficiency of OpenMP parallel computation: thesis/04-openmp-energy-efficiency.md
+      - 5. Optimizing network-on-chip topologies: thesis/05-gannoc.md
+      - 6. Generating optimized heterogeneous networks-on-chip: thesis/06-m-rwgan.md
+      - 7. Conclusion and perspectives: thesis/07-conclusion.md
+      - References: thesis/references.md
+      - Glossary: thesis/glossary.md
+      - Version française:
+          - thesis/fr/index.md
+          - Résumé: thesis/fr/abstract.md
+          - Remerciements: thesis/fr/acknowledgements.md
+          - 1. Introduction: thesis/fr/01-introduction.md
+          - 2. Axes de recherche et problèmes adressés: thesis/fr/02-research-axes.md
+          - 3. État de l'art: thesis/fr/03-state-of-the-art.md
+          - 4. Efficacité énergétique des calculs OpenMP: thesis/fr/04-openmp-energy-efficiency.md
+          - 5. Optimisation des topologies de réseaux sur puce: thesis/fr/05-gannoc.md
+          - 6. Génération de réseaux sur puce hétérogènes: thesis/fr/06-m-rwgan.md
+          - 7. Conclusion et perspectives: thesis/fr/07-conclusion.md
+          - Références: thesis/fr/references.md
+          - Glossaire: thesis/fr/glossary.md
