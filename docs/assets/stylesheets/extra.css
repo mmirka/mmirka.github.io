@@ -70,7 +70,7 @@
 
   --md-primary-fg-color: #7fb8b4;
   --md-primary-fg-color--light: #9cccc8;
-  --md-primary-fg-color--dark: #0e1b1d;
+  --md-primary-fg-color--dark: #14272a;
   --md-primary-bg-color: #dce7e5;
   --md-primary-bg-color--light: #8fa8a6;
 
@@ -81,7 +81,7 @@
   --md-code-bg-color: #1b2027;
   --md-code-fg-color: #d6dbe0;
 
-  --md-footer-bg-color: #0e1b1d;
+  --md-footer-bg-color: #14272a;
   --md-footer-bg-color--dark: #0a1315;
 }
 
@@ -90,7 +90,7 @@
    header keeps its own near-black ground there instead. */
 [data-md-color-scheme="slate"] .md-header,
 [data-md-color-scheme="slate"] .md-tabs {
-  background-color: #0e1b1d;
+  background-color: #14272a;
 }
 
 /* ---------------------------------------------------------------------------
