@@ -1,14 +1,9 @@
 # Plotting recipes
 
-One page per technique, each carrying the matplotlib calls that make it work,
-the script it came from, and the command that redraws it.
+This page is dedicated to **dataviz with python**.
 
-All **matplotlib** — one page uses `networkx` for a layout and one uses Keras'
-`plot_model`, both still drawn through it. No seaborn, no plotly. The figures
-come from three research projects
-([OpenMP](../projects/omp-energy-rl.md), [GANNoC](../projects/gannoc.md),
-[M-RWGAN](../projects/m-rwgan.md)), but the code is the point, so each page
-puts the research context last.
+I share the python code to reproduce figures from my research publications mostly.
+
 
 ## matplotlib
 
