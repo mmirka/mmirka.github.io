@@ -36,7 +36,7 @@ confirmant ces limitations.
 
 ![Évolution sur 48 ans des microprocesseurs commercialisés](../../assets/figures/thesis/ch01/fig-1-1.svg)
 
-**Fig. 1.1** — Évolution sur 48 ans des microprocesseurs commercialisés.
+**Fig. 1.1** : Évolution sur 48 ans des microprocesseurs commercialisés.
 *source :* [\[147\]](references.md#ref-147)
 
 En réponse à ces fortes contraintes, la conception des systèmes de calcul est
@@ -100,7 +100,7 @@ conception et de contrôle doivent être considérés.
 
 ![Une partie des leviers à considérer pour l'optimisation d'un système de calcul parallèle](../../assets/figures/thesis/ch01/fig-1-2.png)
 
-**Fig. 1.2** — Une partie des leviers à considérer pour l'optimisation d'un
+**Fig. 1.2** : Une partie des leviers à considérer pour l'optimisation d'un
 système de calcul parallèle. Figure extraite de
 [\[87\]](references.md#ref-87)
 
@@ -212,7 +212,7 @@ donc à étudier afin de répondre au problème du nombre de paramètres.
 
 ![IA: vue d'ensemble](../../assets/figures/thesis/ch01/fig-1-3.svg)
 
-**Fig. 1.3** — IA: vue d'ensemble
+**Fig. 1.3** : IA: vue d'ensemble
 
 Le domaine de l'intelligence artificielle (IA) et plus particulièrement
 l'utilisation des techniques d'apprentissage s'est particulièrement développé
@@ -284,7 +284,7 @@ portraits photoréalistes.
 
 ![Exemple du progrès des capacités de génération des GAN, de 2014 à 2017](../../assets/figures/thesis/ch01/fig-1-4.png)
 
-**Fig. 1.4** — Exemple du progrès des capacités de génération des GAN, de 2014
+**Fig. 1.4** : Exemple du progrès des capacités de génération des GAN, de 2014
 à 2017. *source:* [\[34\]](references.md#ref-34)
 
 Ce domaine des IA génératives est particulièrement intéressant pour ses

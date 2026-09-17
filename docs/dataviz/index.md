@@ -50,7 +50,7 @@ Labels measured off the bars, and the offset formula for N grouped series.
 
 ### Heatmaps and small multiples
 
-Panels made comparable by a shared colour scale — and what to do when they
+Panels made comparable by a shared colour scale, and what to do when they
 cannot share one.
 
 <div class="gallery" markdown>
@@ -70,7 +70,7 @@ A `projection="3d"` axes sharing a figure with an ordinary one.
 
 ### Graphs
 
-`networkx` has no figure management of its own — it renders onto a matplotlib
+`networkx` has no figure management of its own. It renders onto a matplotlib
 axes, so graph drawings tile on an ordinary subplot grid.
 
 <div class="gallery" markdown>

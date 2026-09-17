@@ -19,7 +19,7 @@ maintained in a separate repository. The manuscript as submitted is the
 [PDF on HAL](https://hal-lirmm.ccsd.cnrs.fr/tel-03480748v2).
 </div>
 
-**Maxime Mirka** — PhD thesis, Université de Montpellier, defended 12 November 2021.
+**Maxime Mirka**, PhD thesis, Université de Montpellier, defended 12 November 2021.
 Original title: *Techniques d'apprentissage pour le contrôle adaptatif
 multi-niveaux du calcul distribué*.
 
@@ -48,8 +48,8 @@ Optimizing the energy efficiency of computing systems is a design problem with
 too many parameters to search exhaustively. The thesis applies neural-network
 learning to that problem at two levels, which is what the two research axes are.
 
-The **first axis** is dynamic control. It introduces two runtime metrics —
-Chunks per Second (CpS) and Chunks per Joule (CpJ) — measured inside the OpenMP
+The **first axis** is dynamic control. It introduces two runtime metrics, i.e.
+Chunks per Second (CpS) and Chunks per Joule (CpJ), measured inside the OpenMP
 runtime itself, with no prior profiling and no code annotation, and uses them to
 drive reinforcement-learning control of a running parallel application.
 
@@ -63,20 +63,20 @@ the designer chooses. That gives **GANNoC** and its reward-guided RWGAN
 
 The work appeared in four English-language papers, all open access on HAL:
 
-- **A Generative AI for Heterogeneous Network-on-Chip Design Space Pruning** —
+- **A Generative AI for Heterogeneous Network-on-Chip Design Space Pruning** ,
   DATE 2022. <https://hal-lirmm.ccsd.cnrs.fr/lirmm-03475912v1>
 - **GANNoC: A Framework for Automatic Generation of NoC Topologies using
-  Generative Adversarial Networks** — RAPIDO 2021.
+  Generative Adversarial Networks** , RAPIDO 2021.
   <https://hal-lirmm.ccsd.cnrs.fr/lirmm-03107918v2>
-- **Online Learning for Dynamic Control of OpenMP Workloads** — MOCAST 2020.
+- **Online Learning for Dynamic Control of OpenMP Workloads** , MOCAST 2020.
   <https://hal.science/hal-02565961v1>
-- **Automatic Energy-Efficiency Monitoring of OpenMP Workloads** — ReCoSoC 2019.
+- **Automatic Energy-Efficiency Monitoring of OpenMP Workloads** , ReCoSoC 2019.
   <https://hal-lirmm.ccsd.cnrs.fr/lirmm-02183901v1>
 
 and in one poster:
 
 - **Energy-Efficiency Metric for Real-Time Monitoring of OpenMP Programs
-  Executing on Multicore Systems** — 13e Colloque National du GDR SoC²,
+  Executing on Multicore Systems** , 13e Colloque National du GDR SoC²,
   Montpellier, June 2019. <https://hal-lirmm.ccsd.cnrs.fr/lirmm-03326276v2>
 
 The thesis itself: <https://hal-lirmm.ccsd.cnrs.fr/tel-03480748v2>

@@ -52,7 +52,7 @@ l'ensemble de applications PARSEC, mis à part pour les benchmarks *Bodytrack* e
 
 ![Nombre de paquets reçus par cœur pour 8 applications du benchmark Parsec exécuté sur 64 cœurs](../../assets/figures/thesis/ch06/fig-6-1.svg)
 
-**Fig. 6.1** — Nombre de paquets reçus par cœur pour 8 applications du benchmark
+**Fig. 6.1** : Nombre de paquets reçus par cœur pour 8 applications du benchmark
 Parsec exécuté sur 64 cœurs
 
 La figure [6.1](#fig-6-1) expose le nombre de paquets reçus durant
@@ -125,7 +125,7 @@ entre ses catégories.
 
 ![Schéma du Multi-Objectives RWGAN, avec la descente de gradient de l'apprentissage du générateur en flèches rouges](../../assets/figures/thesis/ch06/fig-6-2.svg)
 
-**Fig. 6.2** — Schéma du Multi-Objectives RWGAN, avec la descente de gradient de
+**Fig. 6.2** : Schéma du Multi-Objectives RWGAN, avec la descente de gradient de
 l'apprentissage du générateur en flèches rouges.
 
 Nous proposons ici une amélioration du RWGAN présenté dans le chapitre
@@ -238,7 +238,7 @@ même taille, et de structure classique (5 ports: Nord, Sud, Est, Ouest, Local).
 |:--:|:--:|:--:|:--:|
 | **Taille des buffers** | 12 | 4 | 2 |
 
-**Tableau 6.1** — Taille des buffers en *flits*.
+**Tableau 6.1** : Taille des buffers en *flits*.
 
 **Simulateur** Afin d'obtenir, pour différents trafics, les mesures de
 performances et de consommation énergétique des NoC produits, nous utilisons
@@ -263,7 +263,7 @@ utilisés dans notre étude.
 |:--:|:--:|:--:|:--:|
 | $45nm$ | $1.0V$ | $650MHz$ | Matrix |
 
-**Tableau 6.2** — Orion3.0: paramètres de la technologie
+**Tableau 6.2** : Orion3.0: paramètres de la technologie
 
 **Architecture et paramètres du M-RWGAN** Notre M-RWGAN est construit avec trois
 blocs de rewards: un reward pour le seuil de saturation, un second reward pour
@@ -300,7 +300,7 @@ donnés dans les tableaux [6.3](#tab-6-3) et [6.4](#tab-6-4).
 | Dimensions | A: 64x64<br>X: 64x3 | 16 | 32 | 64 | 1 |
 | Fonction<br>d'activation | *–* | *LeakyReLU<br>($\alpha = 0.2$)* | *LeakyReLU<br>($\alpha = 0.2$)* | *LeakyReLU<br>($\alpha = 0.2$)* | *Linear* |
 
-**Tableau 6.3** — Dimensionnement des modules Générateur et Critique du M-RWGAN
+**Tableau 6.3** : Dimensionnement des modules Générateur et Critique du M-RWGAN
 
 > Rendered as two tables; the printed thesis shows them side by side
 > (Table 6.3).
@@ -337,7 +337,7 @@ matrice $X$ des graphes évalués.
 | Dimensions | X: 8x8x3 | 128<br>filtre: 3x3<br>pas: 1 | 32<br>filtre: 3x3<br>pas: 2 | 128 | 1 |
 | Fonction<br>d'activation | – | *LeakyReLU*<br>*($\alpha = 0.2$)* | *LeakyReLU*<br>*($\alpha = 0.2$)* | *LeakyReLU*<br>*($\alpha = 0.2$)* | *Sigmoïde* |
 
-**Tableau 6.4** — Dimensionnement des différents Rewards du M-RWGAN
+**Tableau 6.4** : Dimensionnement des différents Rewards du M-RWGAN
 
 > Rendered as two tables; the printed thesis shows them side by side
 > (Table 6.4).
@@ -384,7 +384,7 @@ et les caractéristiques finales des NoC générés.
 
 ![Quantité de trafic normalisée reçue par routeur pour 2 trafics synthétiques exécuté sur un mesh 8x8](../../assets/figures/thesis/ch06/fig-6-3.svg)
 
-**Fig. 6.3** — Quantité de trafic normalisée reçue par routeur pour 2 trafics
+**Fig. 6.3** : Quantité de trafic normalisée reçue par routeur pour 2 trafics
 synthétiques exécuté sur un mesh 8x8: hotspot30 (i.e. 30% du trafic est à
 destination du routeur 54), et uniforme.
 
@@ -434,7 +434,7 @@ consommée, respectivement les figures [6.4a](#fig-6-4a) et
 |:--:|:--:|
 | ![Distribution des NoC du dataset selon leur seuil de saturation](../../assets/figures/thesis/ch06/fig-6-4a.png) | ![Distribution des NoC du dataset selon leur puissance (mW) au seuil de saturation](../../assets/figures/thesis/ch06/fig-6-4b.png) |
 
-**Fig. 6.4** — Distribution du dataset uniforme.
+**Fig. 6.4** : Distribution du dataset uniforme.
 
 On constate un biais important autour du seuil de saturation de 13% et de la
 puissance de 1200mW. On peut donc attendre de l'entraînement du GAN, sans les
@@ -468,7 +468,7 @@ la suite comment l'apprentissage du GAN se comporte.
 |:--:|
 | ![Puissance (mW) au seuil de saturation](../../assets/figures/thesis/ch06/fig-6-5b.svg) |
 
-**Fig. 6.5** — Taille moyenne des routeurs, en fonction du seuil de saturation
+**Fig. 6.5** : Taille moyenne des routeurs, en fonction du seuil de saturation
 [6.5a](#fig-6-5a) et de la puissance consommée [6.5b](#fig-6-5b) des NoC, pour
 le trafic **uniforme**.
 
@@ -486,7 +486,7 @@ consommée, respectivement les figures [6.6a](#fig-6-6a) et
 |:--:|:--:|
 | ![Distribution des NoC du dataset selon leur seuil de saturation](../../assets/figures/thesis/ch06/fig-6-6a.png) | ![Distribution des NoC du dataset selon leur puissance (mW) au seuil de saturation](../../assets/figures/thesis/ch06/fig-6-6b.png) |
 
-**Fig. 6.6** — Distribution du dataset hotspot30.
+**Fig. 6.6** : Distribution du dataset hotspot30.
 
 On remarque la présence de biais sur certaines valeurs. En particulier, on note
 une densité plus élevée de NoC ayant une puissance autour de 325mW et 250mW. De
@@ -522,7 +522,7 @@ verticalement, de par le routage XY). Plus globalement, cela confirme l'intérê
 |:--:|
 | ![Puissance (mW) au seuil de saturation](../../assets/figures/thesis/ch06/fig-6-7b.svg) |
 
-**Fig. 6.7** — Taille moyenne des routeurs, en fonction du seuil de saturation
+**Fig. 6.7** : Taille moyenne des routeurs, en fonction du seuil de saturation
 [6.7a](#fig-6-7a) et de la puissance consommée [6.7b](#fig-6-7b) des NoC, pour
 le trafic **hotspot30**.
 
@@ -564,7 +564,7 @@ par le reward global ($\lambda = 0.2$).
 |:--:|:--:|
 | ![beta = 1](../../assets/figures/thesis/ch06/fig-6-8a.svg) | ![beta = 10](../../assets/figures/thesis/ch06/fig-6-8b.svg) |
 
-**Fig. 6.8** — Taille moyenne des routeurs, en fonction de la valeur de $\beta$,
+**Fig. 6.8** : Taille moyenne des routeurs, en fonction de la valeur de $\beta$,
 pour un entraînement de 300 époques sur le trafic uniform, avec le reward
 saturation uniquement (Sat100).
 
@@ -590,7 +590,7 @@ un impact plus important du reward, permettant de pallier au biais du critique.
 |:--:|
 | ![époque 300](../../assets/figures/thesis/ch06/fig-6-9e.svg) |
 
-**Fig. 6.9** — Taille moyenne des routeurs, en fonction de l'étape
+**Fig. 6.9** : Taille moyenne des routeurs, en fonction de l'étape
 d'entraînement (époque), pour un entraînement de 300 époques sur le trafic
 uniforme, avec le reward de saturation uniquement (Sat100).
 
@@ -604,7 +604,7 @@ uniforme, avec le reward de saturation uniquement (Sat100).
 |:--:|
 | ![Taux de présence des types de routeurs](../../assets/figures/thesis/ch06/fig-6-10c.svg) |
 
-**Fig. 6.10** — Évolution des différentes valeurs associées à l'entraînement du
+**Fig. 6.10** : Évolution des différentes valeurs associées à l'entraînement du
 M-RWGAN, pour un entraînement de 300 époques sur le trafic uniforme, avec le
 reward saturation uniquement (Sat100).
 
@@ -669,7 +669,7 @@ puissance consommée).
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../../assets/figures/thesis/ch06/fig-6-11e.svg) | ![Sat10Pow90](../../assets/figures/thesis/ch06/fig-6-11f.svg) | ![Pow100](../../assets/figures/thesis/ch06/fig-6-11g.svg) |
 
-**Fig. 6.11** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.11** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Pow, pour un entraînement de 300 époques sur le trafic
 uniforme.
 
@@ -685,7 +685,7 @@ uniforme.
 |  | Sat10Pow90 | 0.18 | 0.86 | 15.2% | 33.3% | 51.5 |
 |  | Pow100 | 0.08 | 0.95 | 5.3% | 23.7% | 71% |
 
-**Tableau 6.5** — Valeurs des différentes variables d'entraînement. R-Sat et
+**Tableau 6.5** : Valeurs des différentes variables d'entraînement. R-Sat et
 R-Pow correspondent respectivement aux scores du reward de seuil de saturation
 et du reward de consommation. t-Big, t-Medium et t-Small sont les taux de
 présence (i.e. répartition) des types de routeur respectifs dans les NoC
@@ -743,7 +743,7 @@ présence des types de routeur) est disponible dans la table
 |:--:|:--:|:--:|
 | ![Sat30Area70](../../assets/figures/thesis/ch06/fig-6-12e.svg) | ![Sat10Area90](../../assets/figures/thesis/ch06/fig-6-12f.svg) | ![Area100](../../assets/figures/thesis/ch06/fig-6-12g.svg) |
 
-**Fig. 6.12** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.12** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Ar, pour un entraînement de 300 époques sur le trafic
 uniforme.
 
@@ -759,7 +759,7 @@ uniforme.
 |  | Sat10Area90 | 0.33 | 0.86 | 0.8% | 66.3% | 32.9% |
 |  | Area100 | 0.12 | 0.93 | 0% | 32.8% | 67.2% |
 
-**Tableau 6.6** — Valeurs des différentes variables d'entraînement. Reward Sat
+**Tableau 6.6** : Valeurs des différentes variables d'entraînement. Reward Sat
 et Area, trafic uniforme.
 
 Comme attendu, on constate une réduction globale de la taille des routeurs.
@@ -801,7 +801,7 @@ inférieure) peut être considéré comme un NoC ayant une meilleure efficacité
 |:--:|:--:|
 | ![Seuil de saturation et puissance](../../assets/figures/thesis/ch06/fig-6-13a.svg) | ![Seuil de saturation et surface](../../assets/figures/thesis/ch06/fig-6-13b.svg) |
 
-**Fig. 6.13** — Comparaison des NoC générés et du dataset selon différentes
+**Fig. 6.13** : Comparaison des NoC générés et du dataset selon différentes
 métriques (seuil de saturation, énergie consommée, surface), lorsque soumis à un
 trafic uniforme.
 
@@ -865,7 +865,7 @@ proportion du reward Pow de 0% à 100%.
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../../assets/figures/thesis/ch06/fig-6-14e.svg) | ![Sat10Pow90](../../assets/figures/thesis/ch06/fig-6-14f.svg) | ![Pow100](../../assets/figures/thesis/ch06/fig-6-14g.svg) |
 
-**Fig. 6.14** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.14** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Pow, pour un entraînement de 300 époques sur le trafic
 hotspot30.
 
@@ -881,7 +881,7 @@ hotspot30.
 |  | Sat10Pow90 | 0.28 | 0.9 | 12.5% | 40% | 47.5% |
 |  | Pow100 | 0.13 | 0.92 | 8.5% | 34.1% | 57.4% |
 
-**Tableau 6.7** — Valeurs des différentes variables d'entraînement. Reward Sat
+**Tableau 6.7** : Valeurs des différentes variables d'entraînement. Reward Sat
 et Pow, trafic hotspot30.
 
 Enfin, nous entraînons notre M-RWGAN avec des combinaisons du reward Sat et du
@@ -903,7 +903,7 @@ optimisée afin de ne pénaliser au minimum les performances du NoC.
 |:--:|:--:|:--:|
 | ![Sat30Area70](../../assets/figures/thesis/ch06/fig-6-15e.svg) | ![Sat10Area90](../../assets/figures/thesis/ch06/fig-6-15f.svg) | ![Area100](../../assets/figures/thesis/ch06/fig-6-15g.svg) |
 
-**Fig. 6.15** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.15** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Ar, pour un entraînement de 300 époques sur le trafic
 hotspot30.
 
@@ -919,7 +919,7 @@ hotspot30.
 |  | Sat10Area90 | 0.66 | 0.9 | 4% | 40% | 56% |
 |  | Area100 | 0.21 | 0.94 | 0% | 35% | 65% |
 
-**Tableau 6.8** — Valeurs des différentes variables d'entraînement. Reward Sat
+**Tableau 6.8** : Valeurs des différentes variables d'entraînement. Reward Sat
 et Area, trafic hotspot30.
 
 On remarque cependant un manque de précision sur le trafic hotspot30. En effet,
@@ -962,7 +962,7 @@ charges de trafic les plus élevés (i.e. hotspot) sont réduits.
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../../assets/figures/thesis/ch06/fig-6-16e.svg) | ![Sat10Pow90](../../assets/figures/thesis/ch06/fig-6-16f.svg) | ![Pow100](../../assets/figures/thesis/ch06/fig-6-16g.svg) |
 
-**Fig. 6.16** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.16** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Pow, pour un entraînement de 300 époques sur le trafic
 hotspot30. Rewards reposant sur un CNN.
 
@@ -978,7 +978,7 @@ hotspot30. Rewards reposant sur un CNN.
 |  | Sat10Pow90 | 0.37 | 0.9 | 14.7% | 35.9% | 49.4% |
 |  | Pow100 | 0.10 | 0.95 | 21% | 36.3% | 42.7% |
 
-**Tableau 6.9** — Valeurs des différentes variables d'entraînement. Reward Sat
+**Tableau 6.9** : Valeurs des différentes variables d'entraînement. Reward Sat
 et Pow, trafic hotspot30. Rewards reposant sur un CNN.
 
 Enfin, les dernières expérimentations étudiées sont pour les rewards Sat et Area
@@ -1006,7 +1006,7 @@ Big et jusqu'à 68.4% de routeurs Small.
 |:--:|:--:|:--:|
 | ![Sat30Area70](../../assets/figures/thesis/ch06/fig-6-17e.svg) | ![Sat10Area90](../../assets/figures/thesis/ch06/fig-6-17f.svg) | ![Area100](../../assets/figures/thesis/ch06/fig-6-17g.svg) |
 
-**Fig. 6.17** — Taille moyenne des routeurs, en fonction de la proportion entre
+**Fig. 6.17** : Taille moyenne des routeurs, en fonction de la proportion entre
 les rewards Sat et Area, pour un entraînement de 300 époques sur le trafic
 hotspot30. Rewards reposant sur des CNN.
 
@@ -1022,7 +1022,7 @@ hotspot30. Rewards reposant sur des CNN.
 |  | Sat10Area90 | 0.89 | 0.91 | 5% | 27.6% | 68.4% |
 |  | Area100 | 0.20 | 0.94 | 0% | 33.4% | 66.6% |
 
-**Tableau 6.10** — Valeurs des différentes variables d'entraînement. Reward Sat
+**Tableau 6.10** : Valeurs des différentes variables d'entraînement. Reward Sat
 et Area, trafic hotspot30. Rewards reposant sur un CNN.
 
 <a id="fig-6-18"></a>
@@ -1031,7 +1031,7 @@ et Area, trafic hotspot30. Rewards reposant sur un CNN.
 |:--:|:--:|
 | ![Seuil de saturation et puissance](../../assets/figures/thesis/ch06/fig-6-18a.svg) | ![Seuil de saturation et surface](../../assets/figures/thesis/ch06/fig-6-18b.svg) |
 
-**Fig. 6.18** — Comparaison des NoC générés et du dataset selon différentes
+**Fig. 6.18** : Comparaison des NoC générés et du dataset selon différentes
 métriques (seuil de saturation, énergie consommée, surface), lorsque soumis à un
 trafic hotspot30, pour les rewards GCN.
 
@@ -1041,7 +1041,7 @@ trafic hotspot30, pour les rewards GCN.
 |:--:|:--:|
 | ![6.19a](../../assets/figures/thesis/ch06/fig-6-19a.svg) | ![6.19b](../../assets/figures/thesis/ch06/fig-6-19b.svg) |
 
-**Fig. 6.19** — Comparaison des NoC générés et du dataset selon différentes
+**Fig. 6.19** : Comparaison des NoC générés et du dataset selon différentes
 métriques (seuil de saturation, énergie consommée, surface), lorsque soumis à un
 trafic hotspot30, pour les rewards CNN.
 
@@ -1150,7 +1150,7 @@ hotspot30.
 
 ![Distance euclidienne entre le meilleur NoC généré de chaque apprentissage et le vrai front Pareto](../../assets/figures/thesis/ch06/fig-6-20.svg)
 
-**Fig. 6.20** — Distance euclidienne entre le meilleur NoC généré de chaque
+**Fig. 6.20** : Distance euclidienne entre le meilleur NoC généré de chaque
 apprentissage et le vrai front Pareto, ainsi que le détail pour chaque objectif.
 Mesure de l'IGD - i.e. moyenne.
 

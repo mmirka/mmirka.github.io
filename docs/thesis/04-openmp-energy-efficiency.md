@@ -52,7 +52,7 @@ application executed on a multicore system.
 
 <a id="def-1"></a>
 
-> **Definition 1 — Chunks per Second - CpS**
+> **Definition 1 : Chunks per Second - CpS**
 >
 > The number of chunks executed in one second, where a chunk is a block of
 > instructions assigned to a thread for execution. Defines a speed of work,
@@ -60,7 +60,7 @@ application executed on a multicore system.
 
 <a id="def-2"></a>
 
-> **Definition 2 — Chunks per Joule - CpJ**
+> **Definition 2 : Chunks per Joule - CpJ**
 >
 > The number of chunks executed for one Joule, where the Joules denote the
 > quantity of energy used by the computing system. It can also be defined as
@@ -103,7 +103,7 @@ an elementary computation on each of these memory cells.
 16    return 0;
 ```
 
-**Fig. 4.1** — Example of a simple OpenMP C code.
+**Fig. 4.1** : Example of a simple OpenMP C code.
 
 The computations are therefore performed inside a *for* loop, which
 corresponds to the workload that is to be parallelized. To grasp how the
@@ -125,7 +125,7 @@ in Figure [4.2](#fig-4-2).
 |:--:|:--:|
 | ![Configurations with different core counts. Frequency = 1.2GHz.](../assets/figures/thesis/ch04/fig-4-2a.png) | ![Configurations with different core frequencies. #core = 1.](../assets/figures/thesis/ch04/fig-4-2b.png) |
 
-**Fig. 4.2** — CpS and CpJ for different system configurations.
+**Fig. 4.2** : CpS and CpJ for different system configurations.
 
 In Figure [4.2a](#fig-4-2a), performance (i.e. CpS) rises before reaching a
 plateau from 3 cores onwards. This is explained by a saturation of memory
@@ -162,7 +162,7 @@ system is mainly affected by the chunks of the application under consideration.
 
 ![Chunk collection sequence diagram (left) and chunk counter update method (right, pseudo-code).](../assets/figures/thesis/ch04/fig-4-3.png)
 
-**Fig. 4.3** — Chunk collection sequence diagram (left) and chunk counter
+**Fig. 4.3** : Chunk collection sequence diagram (left) and chunk counter
 update method (right, pseudo-code).
 
 The GNU implementation of the OpenMP API is embedded in the *libgomp* library
@@ -415,7 +415,7 @@ designed to have two execution phases, with different characteriztics.
 28    return 0;
 ```
 
-**Fig. 4.4** — A simple OpenMP program in C with alternating phases of the
+**Fig. 4.4** : A simple OpenMP program in C with alternating phases of the
 compute-intensive and memory-bound kinds.
 
 This program consists of a single main *for* loop, executing two other *for*
@@ -445,7 +445,7 @@ system configuration inducing a high energy consumption - i.e. 19 cores at
 
 ![Profile of the synthetic application executed on an Intel server. From top to bottom: CpS, power consumption (Watt), CpJ.](../assets/figures/thesis/ch04/fig-4-5.png)
 
-**Fig. 4.5** — Profile of the synthetic application executed on an Intel
+**Fig. 4.5** : Profile of the synthetic application executed on an Intel
 server. From top to bottom: CpS, power consumption (Watt), CpJ.
 
 When this code is executed on different architecture configurations, the
@@ -457,7 +457,7 @@ energy-efficiency results shown in figure [4.6](#fig-4-6) are obtained.
 |:--:|:--:|:--:|
 | ![Global and per-phase CpS mean](../assets/figures/thesis/ch04/fig-4-6a.png) | ![Global and per-phase CpJ mean](../assets/figures/thesis/ch04/fig-4-6b.png) | ![Breakdown of the phases' execution time](../assets/figures/thesis/ch04/fig-4-6c.png) |
 
-**Fig. 4.6** — Comparison of the metrics for 3 configurations on an Intel
+**Fig. 4.6** : Comparison of the metrics for 3 configurations on an Intel
 server. 1: 2 cores at f= 1.5GHz; 2: 9 cores at f= 1.5GHz; 3: 17 cores
 at f= 2.1GHz.(a): Describes the mean CpS values, for the overall execution
 and for each execution phase, (b): Same as (a) for the CpJ, (c): Breakdown of
@@ -516,7 +516,7 @@ trained autoencoder, we perform phase detection with excellent results.
 
 ![Illustration of the autoencoder concept](../assets/figures/thesis/ch04/fig-4-7.png)
 
-**Fig. 4.7** — Illustration of the autoencoder concept
+**Fig. 4.7** : Illustration of the autoencoder concept
 
 Autoencoders are therefore particular topologies of deep neural networks that
 are becoming more and more popular. They are used in various application
@@ -553,7 +553,7 @@ illustrated in figure [4.8](#fig-4-8), and described in section
 
 ![Designed autoencoder. 1: internal layer, 2: configuration data (#cores, frequency), 3: concatenation of 1 and 2](../assets/figures/thesis/ch04/fig-4-8.png)
 
-**Fig. 4.8** — Designed autoencoder. 1: internal layer, 2: configuration
+**Fig. 4.8** : Designed autoencoder. 1: internal layer, 2: configuration
 data (#cores, frequency), 3: concatenation of 1 and 2
 
 In order to extract information about the phase, a discrete layer (blue
@@ -592,7 +592,7 @@ based on the Armv7 big.LITTLE architecture.
 
 ![Sample of the execution of the SRAD application. CpS and CpJ profiles.](../assets/figures/thesis/ch04/fig-4-9.png)
 
-**Fig. 4.9** — Sample of the execution of the SRAD application. CpS and CpJ
+**Fig. 4.9** : Sample of the execution of the SRAD application. CpS and CpJ
 profiles.
 
 In what follows, the term system configuration designates a set of two
@@ -613,7 +613,7 @@ are observed.
 |:--:|:--:|
 | ![CpJ for the Odroid board, 52 configurations](../assets/figures/thesis/ch04/fig-4-10c.png) | ![CpJ for the Odroid board, zoom on the optimal configurations](../assets/figures/thesis/ch04/fig-4-10d.png) |
 
-**Fig. 4.10** — Characterization of the SRAD application, on two
+**Fig. 4.10** : Characterization of the SRAD application, on two
 architectures: an Intel server possessing 20 cores and an Arm platform with 4
 heterogeneous cores.
 
@@ -643,7 +643,7 @@ Intel server.
 
 ![Example of phase detection for the SRAD application, on the CpS profile.](../assets/figures/thesis/ch04/fig-4-11.png)
 
-**Fig. 4.11** — Example of phase detection for the SRAD application, on the
+**Fig. 4.11** : Example of phase detection for the SRAD application, on the
 CpS profile.
 
 Figure [4.11](#fig-4-11) plots the evolution of the CpS together with the two
@@ -758,7 +758,7 @@ described in figure [4.12](#fig-4-12).
 16  return 0;
 ```
 
-**Fig. 4.12** — Benchmark model.
+**Fig. 4.12** : Benchmark model.
 
 The *memory-intensive* code segment executes a set of operations on large
 vectors, such as additions, copies and permutations. The intensity of the
@@ -795,7 +795,7 @@ the execution threads, among the 20 available on our Intel server (c.f. section
 | L3HIT = L3 (read) cache hit ratio | L2MPI = number of L2 (read) <br> cache misses per instruction |
 | INST = Instructions retired | L3MPI = number of L3 (read) <br> cache misses per instruction |
 
-**Table 4.1** — Description of the Intel PCM counters.
+**Table 4.1** : Description of the Intel PCM counters.
 
 All the values described in the remainder of this part are collected from the
 Intel hardware performance counters, through the Intel PCM tool
@@ -819,7 +819,7 @@ concerned at their maximum value. Conversely, the "memory-intensive" benchmark
 |:--:|:--:|
 | ![C80M20](../assets/figures/thesis/ch04/fig-4-13e.png) | ![C0M100](../assets/figures/thesis/ch04/fig-4-13f.png) |
 
-**Fig. 4.13** — Profile of the applications according to the PCM counters.
+**Fig. 4.13** : Profile of the applications according to the PCM counters.
 
 <a id="fig-4-14"></a>
 
@@ -831,7 +831,7 @@ concerned at their maximum value. Conversely, the "memory-intensive" benchmark
 |:--:|:--:|
 | ![C80M20](../assets/figures/thesis/ch04/fig-4-14e.png) | ![C0M100](../assets/figures/thesis/ch04/fig-4-14f.png) |
 
-**Fig. 4.14** — Characterization of the energy efficiency of the applications
+**Fig. 4.14** : Characterization of the energy efficiency of the applications
 (i.e. CpJ) and optimal configuations.
 
 #### 4.2.2.3 Energy efficiency
@@ -851,7 +851,7 @@ concerned at their maximum value. Conversely, the "memory-intensive" benchmark
 | **vs.** | CpJ | 10% | 20% | 29% | 32% | 56% | 469% |
 | **Conservative** | CpS | -12% | -14% | -19% | -16% | 1% | 160% |
 
-**Table 4.2** — Gains in energy efficiency (CpJ) and performance (CpS) of the
+**Table 4.2** : Gains in energy efficiency (CpJ) and performance (CpS) of the
 benchmarks' optimal configurations, compared with the Linux governors:
 Powersave, Performance, Ondemand and Conservative.
 
@@ -906,7 +906,7 @@ This system is described in figure [4.15](#fig-4-15).
 
 ![Control system.](../assets/figures/thesis/ch04/fig-4-15.svg)
 
-**Fig. 4.15** — Control system.
+**Fig. 4.15** : Control system.
 
 It is based on the reward principle used in reinforcement learning (RL for
 *Reinforcement Learning*). Here, the network is only trained to perform
@@ -961,7 +961,7 @@ presented above.
 
 ![Proposed autoencoder.](../assets/figures/thesis/ch04/fig-4-16.png)
 
-**Fig. 4.16** — Proposed autoencoder.
+**Fig. 4.16** : Proposed autoencoder.
 
 We therefore propose to include in the control system the autoencoder presented
 in section [4.1.3.1](#4131-the-proposed-autoencoder) in figure
@@ -982,7 +982,7 @@ where a two-phase synthetic application serves as our proof of concept.
 
 ![Control system with the autoencoder.](../assets/figures/thesis/ch04/fig-4-17.svg)
 
-**Fig. 4.17** — Control system with the autoencoder.
+**Fig. 4.17** : Control system with the autoencoder.
 
 #### 4.2.3.3 Neural-network implementation details
 
@@ -1008,7 +1008,7 @@ actions.
 | Dimensions | 3 | 8 | 64 | 256 | 209 |
 | Activation function | *–* | *Linear* | *Linear* | *Linear* | *Linear* |
 
-**Table 4.3** — Sizing of the Agent's neural network.
+**Table 4.3** : Sizing of the Agent's neural network.
 
 The exploration period takes 2048 iterations. This number of iterations was
 determined experimentally so as to guarantee correct learning by our agent
@@ -1037,7 +1037,7 @@ execution.
 | Dimensions | 3 | 100 | 100 | 100 | 2 | 2 | 100 | 100 | 100 | 3 |
 | Activation function | *–* | *Linear* | *Linear* | *Linear* | *binary tanh* | *binary tanh* | *Linear* | *Linear* | *Linear* | *Linear* |
 
-**Table 4.4** — Sizing of the autoencoder.
+**Table 4.4** : Sizing of the autoencoder.
 
 ## 4.3 Results and analysis
 
@@ -1077,7 +1077,7 @@ data collection as well as the decision making.
 |:--:|
 | ![Actions of the controller i.e. configuration.](../assets/figures/thesis/ch04/fig-4-18b.png) |
 
-**Fig. 4.18** — Evolution of the system variables during the online learning,
+**Fig. 4.18** : Evolution of the system variables during the online learning,
 for the control of the DGEMM benchmark.
 
 For our experiment, the exploration phase is arbitrarily set at 2048 iterations
@@ -1113,7 +1113,7 @@ on the whole set of applications of the synthetic benchmark.
 |:--:|:--:|
 | ![C80M20](../assets/figures/thesis/ch04/fig-4-19e.svg) | ![C0M100](../assets/figures/thesis/ch04/fig-4-19f.svg) |
 
-**Fig. 4.19** — Energy efficiency for each of the applications of the
+**Fig. 4.19** : Energy efficiency for each of the applications of the
 synthetic benchmark, while the controller is in use.
 
 Figure [4.19](#fig-4-19) shows the evolution of the energy efficiency for each
@@ -1139,7 +1139,7 @@ obtained for the optimal configurations.
 |  | Gains (CpJ) | 4.8% | 3.0% | 1.4% | 2.6% | 11.2% | 20.5% |
 |  | #cores, freq(GHz) | 19, 2.1 | 13, 1.9 | 8, 1.9 | 4, 2.1 | 3, 2.1 | 1, 1.9 |
 
-**Table 4.5** — Results of the controller for each of the applications of the
+**Table 4.5** : Results of the controller for each of the applications of the
 synthetic benchmark.
 
 One must, however, remain cautious about these gains. Indeed, we obtain these
@@ -1169,7 +1169,7 @@ detection. The rest of the experimental set-up is the same as for section
 |:--:|:--:|
 | ![CpJ for the server's 209 configurations](../assets/figures/thesis/ch04/fig-4-20a.png) | ![Zoom on the optimal configurations: 208 and 203 respectively for phase 1 and phase 2.](../assets/figures/thesis/ch04/fig-4-20b.png) |
 
-**Fig. 4.20** — Characterization of the SRAD application, on the Intel server,
+**Fig. 4.20** : Characterization of the SRAD application, on the Intel server,
 distributing the resources evenly among the sockets.
 
 We evaluate our control system on a well-known multi-phase application: SRAD,
@@ -1192,7 +1192,7 @@ for the high phase and the low phase.
 |:--:|
 | ![Actions of the controller i.e. configuration.](../assets/figures/thesis/ch04/fig-4-21b.svg) |
 
-**Fig. 4.21** — Operating traces of the controller, for SRAD.
+**Fig. 4.21** : Operating traces of the controller, for SRAD.
 
 The results obtained with our control system are set out in figures
 [4.21](#fig-4-21) and [4.22](#fig-4-22). First, an overview of the training is
@@ -1220,7 +1220,7 @@ long run, this percentage can be set to 0.
 |:--:|
 | ![Actions of the controller i.e. configuration.](../assets/figures/thesis/ch04/fig-4-22c.svg) |
 
-**Fig. 4.22** — Post-training zoom _ Operating traces of the controller,
+**Fig. 4.22** : Post-training zoom _ Operating traces of the controller,
 for SRAD.
 
 The first remark we can make is that the system converges towards one
@@ -1264,7 +1264,7 @@ figure [4.22b](#fig-4-22b)), which logically reduces our mean gains.
 | **vs. Ondemand** | $\delta$ | -11.8% | 1.5% | -12.9% |
 | **vs. Conservative** | $\delta$ | -10.6% | -3.7% | -12.8% |
 
-**Table 4.6** — Differences ($\delta$) in energy efficiency (CpJ) of our
+**Table 4.6** : Differences ($\delta$) in energy efficiency (CpJ) of our
 controller, compared with the Linux governors: Powersave, Performance,
 Ondemand and Conservative.
 
@@ -1294,7 +1294,7 @@ section.
 |:--:|
 | ![Actions of the controller i.e. configuration.](../assets/figures/thesis/ch04/fig-4-23b.png) |
 
-**Fig. 4.23** — Operating traces of the controller, for the 2-phase
+**Fig. 4.23** : Operating traces of the controller, for the 2-phase
 benchmark.
 
 As can be seen in figure [4.23a](#fig-4-23a), the two phases are clearly
@@ -1331,7 +1331,7 @@ and an improvement of the training could eventually produce gains ranging from
 |:--:|
 | ![Actions of the controller i.e. configuration.](../assets/figures/thesis/ch04/fig-4-24b.svg) |
 
-**Fig. 4.24** — Operating traces of the controller, for the 2-phase
+**Fig. 4.24** : Operating traces of the controller, for the 2-phase
 benchmark.
 
 **Verification:** Finally, we propose here to validate the value of the

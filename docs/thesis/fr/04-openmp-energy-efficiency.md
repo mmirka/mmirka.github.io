@@ -53,7 +53,7 @@ application exécutée sur un système multi-cœurs.
 
 <a id="def-1"></a>
 
-> **Définition 1 — Chunks par Seconde - CpS**
+> **Définition 1 : Chunks par Seconde - CpS**
 >
 > Le nombre de chunks exécutés en une seconde, où un chunk est un bloc
 > d'instructions attribué à un thread pour exécution. Défini une vitesse de
@@ -61,7 +61,7 @@ application exécutée sur un système multi-cœurs.
 
 <a id="def-2"></a>
 
-> **Définition 2 — Chunks par Joule - CpJ**
+> **Définition 2 : Chunks par Joule - CpJ**
 >
 > Le nombre de chunks exécutés pour un Joule, où les Joules désignent la
 > quantité d'énergie utilisée par le système de calcul. Peut aussi être défini
@@ -104,7 +104,7 @@ A. C'est un code simple, parcourant un espace mémoire, faisant un calcul
 16    return 0;
 ```
 
-**Fig. 4.1** — Exemple d'un code C OpenMP simple.
+**Fig. 4.1** : Exemple d'un code C OpenMP simple.
 
 Les calculs sont donc effectués à l'intérieur d'une boucle *for*, qui
 correspond au workload à paralléliser. Pour comprendre comment la
@@ -128,7 +128,7 @@ montré sur la Figure [4.2](#fig-4-2).
 |:--:|:--:|
 | ![Configurations ayant différents nombres de cœurs. Fréquence = 1.2GHz.](../../assets/figures/thesis/ch04/fig-4-2a.png) | ![Configurations ayant différentes fréquences de cœur. #cœur = 1.](../../assets/figures/thesis/ch04/fig-4-2b.png) |
 
-**Fig. 4.2** — CpS et CpJ pour différentes configurations du système.
+**Fig. 4.2** : CpS et CpJ pour différentes configurations du système.
 
 Sur la Figure [4.2a](#fig-4-2a), la performance (i.e. CpS) augmente avant
 d'atteindre un plateau à partir de 3 cœurs. Cela s'explique par une
@@ -169,7 +169,7 @@ l'application considérée.
 
 ![Diagramme séquentiel de la collecte de chunks (gauche) et méthode de mise-à-jour du compteur de chunks (droite, pseudo-code).](../../assets/figures/thesis/ch04/fig-4-3.png)
 
-**Fig. 4.3** — Diagramme séquentiel de la collecte de chunks (gauche) et méthode
+**Fig. 4.3** : Diagramme séquentiel de la collecte de chunks (gauche) et méthode
 de mise-à-jour du compteur de chunks (droite, pseudo-code).
 
 L'implémentation de l'API OpenMP sur GNU est intégrée dans la bibliothèque
@@ -429,7 +429,7 @@ caractéristiques.
 28    return 0;
 ```
 
-**Fig. 4.4** — Un programme OpenMP simple en C possédant des phases
+**Fig. 4.4** : Un programme OpenMP simple en C possédant des phases
 alternantes de type compute-intensive et memory-bound.
 
 Ce programme consiste en une seule boucle *for* principale, exécutant
@@ -462,7 +462,7 @@ masquant ainsi les variations liées à l'application.
 
 ![Profile de l'application synthétique exécutée sur un serveur Intel. De haut en bas: CpS, puissance consommée (Watt), CpJ.](../../assets/figures/thesis/ch04/fig-4-5.png)
 
-**Fig. 4.5** — Profile de l'application synthétique exécutée sur un serveur
+**Fig. 4.5** : Profile de l'application synthétique exécutée sur un serveur
 Intel. De haut en bas: CpS, puissance consommée (Watt), CpJ.
 
 Lorsque ce code est exécuté sur différentes configurations d'architecture,
@@ -475,7 +475,7 @@ on obtient pour l'efficacité énergétique les résultats visibles figure
 |:--:|:--:|:--:|
 | ![Moyenne du CpS globale et par phase](../../assets/figures/thesis/ch04/fig-4-6a.png) | ![Moyenne du CpJ globale et par phase](../../assets/figures/thesis/ch04/fig-4-6b.png) | ![Répartition du temps d'exécution des phases](../../assets/figures/thesis/ch04/fig-4-6c.png) |
 
-**Fig. 4.6** — Comparaison des métriques pour 3 configurations sur un
+**Fig. 4.6** : Comparaison des métriques pour 3 configurations sur un
 serveur Intel. 1: 2 cœurs et f= 1.5GHz; 2: 9 cœurs et f= 1.5GHz; 3: 17 cœurs
 et f= 2.1GHz.(a): Décrit les valeurs moyennes du CpS, pour l'exécution
 globale et pour chaque phase d'exécution, (b): Identique à (a) pour le CpJ,
@@ -538,7 +538,7 @@ la détection de phases avec d'excellents résultats.
 
 ![Illustration du concept d'auto-encodeur](../../assets/figures/thesis/ch04/fig-4-7.png)
 
-**Fig. 4.7** — Illustration du concept d'auto-encodeur
+**Fig. 4.7** : Illustration du concept d'auto-encodeur
 
 Les auto-encodeurs sont donc des topologies particulières de réseaux de neurones
 profonds qui deviennent de plus en plus populaires. Ils sont utilisés dans
@@ -576,7 +576,7 @@ illustrée figure [4.8](#fig-4-8), et décrite section
 
 ![Auto-encodeur conçu. 1: couche interne, 2: données de configuration (#cœurs, fréquence), 3: concaténation de 1 et 2](../../assets/figures/thesis/ch04/fig-4-8.png)
 
-**Fig. 4.8** — Auto-encodeur conçu. 1: couche interne, 2: données de
+**Fig. 4.8** : Auto-encodeur conçu. 1: couche interne, 2: données de
 configuration (#cœurs, fréquence), 3: concaténation de 1 et 2
 
 Dans le but d'extraire une information sur la phase, une couche discrète
@@ -616,7 +616,7 @@ Armv7 big.LITTLE.
 
 ![Échantillon de l'exécution de l'application SRAD. Profils selon le CpS et le CpJ.](../../assets/figures/thesis/ch04/fig-4-9.png)
 
-**Fig. 4.9** — Échantillon de l'exécution de l'application SRAD. Profils selon
+**Fig. 4.9** : Échantillon de l'exécution de l'application SRAD. Profils selon
 le CpS et le CpJ.
 
 Dans la suite, le terme de configuration système désigne un ensemble de deux
@@ -637,7 +637,7 @@ deux phases d'exécution distinctes.
 |:--:|:--:|
 | ![CpJ pour la carte Odroid, 52 configurations](../../assets/figures/thesis/ch04/fig-4-10c.png) | ![CpJ pour la carte Odroid, zoom sur les configurations optimales](../../assets/figures/thesis/ch04/fig-4-10d.png) |
 
-**Fig. 4.10** — Caractérisation de l'application SRAD, sur deux architectures:
+**Fig. 4.10** : Caractérisation de l'application SRAD, sur deux architectures:
 un serveur Intel possédant 20 cœurs et une plate-forme Arm avec 4 cœurs
 hétérogènes.
 
@@ -667,7 +667,7 @@ haute-performance (HPC) tels que le serveur Intel.
 
 ![Exemple de détection de phase pour l'application SRAD, sur le profil du CpS.](../../assets/figures/thesis/ch04/fig-4-11.png)
 
-**Fig. 4.11** — Exemple de détection de phase pour l'application SRAD, sur le
+**Fig. 4.11** : Exemple de détection de phase pour l'application SRAD, sur le
 profil du CpS.
 
 Sur la figure [4.11](#fig-4-11) sont tracés l'évolution des CpS avec les deux
@@ -788,7 +788,7 @@ besoin en calculs. Le modèle est décrit sur la figure [4.12](#fig-4-12).
 16  return 0;
 ```
 
-**Fig. 4.12** — Modèle du Benchmark.
+**Fig. 4.12** : Modèle du Benchmark.
 
 Le segment de code de type *memory-intensive* exécute un ensemble d'opérations
 sur de grands vecteurs telles que des additions, copies et permutations.
@@ -826,7 +826,7 @@ Intel (c.f. section
 | L3HIT = L3 (read) cache hit ratio | L2MPI = number of L2 (read) <br> cache misses per instruction |
 | INST = Instructions retired | L3MPI = number of L3 (read) <br> cache misses per instruction |
 
-**Tableau 4.1** — Description des compteurs Intel PCM.
+**Tableau 4.1** : Description des compteurs Intel PCM.
 
 Toutes les valeurs décrites dans la suite de cette partie sont collectées à
 partir des compteurs matériels de performance Intel, via l'outil Intel PCM
@@ -851,7 +851,7 @@ compteurs orientés mémoire à leur maximum.
 |:--:|:--:|
 | ![C80M20](../../assets/figures/thesis/ch04/fig-4-13e.png) | ![C0M100](../../assets/figures/thesis/ch04/fig-4-13f.png) |
 
-**Fig. 4.13** — Profil des applications selon les compteurs PCM.
+**Fig. 4.13** : Profil des applications selon les compteurs PCM.
 
 <a id="fig-4-14"></a>
 
@@ -863,7 +863,7 @@ compteurs orientés mémoire à leur maximum.
 |:--:|:--:|
 | ![C80M20](../../assets/figures/thesis/ch04/fig-4-14e.png) | ![C0M100](../../assets/figures/thesis/ch04/fig-4-14f.png) |
 
-**Fig. 4.14** — Caractérisation de l'efficacité énergétique des applications
+**Fig. 4.14** : Caractérisation de l'efficacité énergétique des applications
 (i.e. CpJ) et configuations optimales.
 
 #### 4.2.2.3 Efficacité énergétique
@@ -883,7 +883,7 @@ compteurs orientés mémoire à leur maximum.
 | **vs.** | CpJ | 10% | 20% | 29% | 32% | 56% | 469% |
 | **Conservative** | CpS | -12% | -14% | -19% | -16% | 1% | 160% |
 
-**Tableau 4.2** — Gains en efficacité énergétique (CpJ) et performance (CpS) des
+**Tableau 4.2** : Gains en efficacité énergétique (CpJ) et performance (CpS) des
 configurations optimales des benchmarks, en comparaison avec les gouverneurs
 Linux: Powersave, Performance, Ondemand et Conservative.
 
@@ -939,7 +939,7 @@ Ce système est décrit figure [4.15](#fig-4-15).
 
 ![Système de contrôle.](../../assets/figures/thesis/ch04/fig-4-15.svg)
 
-**Fig. 4.15** — Système de contrôle.
+**Fig. 4.15** : Système de contrôle.
 
 Il est basé sur le principe de récompense utilisé dans l'apprentissage par
 renforcement (RL pour *Reinforcement Learning*). Ici, le réseau est seulement
@@ -995,7 +995,7 @@ notre boucle de contrôle l'outil de détection de phases présenté plus haut.
 
 ![Auto-encodeur proposé.](../../assets/figures/thesis/ch04/fig-4-16.png)
 
-**Fig. 4.16** — Auto-encodeur proposé.
+**Fig. 4.16** : Auto-encodeur proposé.
 
 Nous proposons donc d'inclure au système de contrôle l'auto-encodeur présenté
 section [4.1.3.1](#4131-auto-encodeur-proposé) en figure [4.8](#fig-4-8) et
@@ -1016,7 +1016,7 @@ application synthétique à deux phases nous sert de preuve de concept.
 
 ![Système de contrôle avec l'auto-encodeur.](../../assets/figures/thesis/ch04/fig-4-17.svg)
 
-**Fig. 4.17** — Système de contrôle avec l'auto-encodeur.
+**Fig. 4.17** : Système de contrôle avec l'auto-encodeur.
 
 #### 4.2.3.3 Détails d'implémentation des réseaux de neurones
 
@@ -1042,7 +1042,7 @@ possibles.
 | Dimensions | 3 | 8 | 64 | 256 | 209 |
 | Fonction d'activation | *–* | *Linear* | *Linear* | *Linear* | *Linear* |
 
-**Tableau 4.3** — Dimensionnement du réseau de neurones de l'Agent.
+**Tableau 4.3** : Dimensionnement du réseau de neurones de l'Agent.
 
 La période d'exploration prend 2048 itérations. Ce nombre d'itérations a été
 déterminé expérimentalement pour garantir un apprentissage correct de notre
@@ -1072,7 +1072,7 @@ l'inférence durant l'exécution.
 | Dimensions | 3 | 100 | 100 | 100 | 2 | 2 | 100 | 100 | 100 | 3 |
 | Fonction d'activation | *–* | *Linear* | *Linear* | *Linear* | *binary tanh* | *binary tanh* | *Linear* | *Linear* | *Linear* | *Linear* |
 
-**Tableau 4.4** — Dimensionnement de l'auto-encodeur.
+**Tableau 4.4** : Dimensionnement de l'auto-encodeur.
 
 ## 4.3 Résultats et analyses
 
@@ -1113,7 +1113,7 @@ que la prise de décision.
 |:--:|
 | ![Actions du contrôleur i.e. configuration.](../../assets/figures/thesis/ch04/fig-4-18b.png) |
 
-**Fig. 4.18** — Évolution des variables du systèmes durant l'apprentissage
+**Fig. 4.18** : Évolution des variables du systèmes durant l'apprentissage
 en-ligne, pour le contrôle du benchmark DGEMM.
 
 Pour notre expérimentation, la phase d'exploration est fixée arbitrairement à
@@ -1150,7 +1150,7 @@ contrôleur sur l'ensemble des applications du benchmark synthétique.
 |:--:|:--:|
 | ![C80M20](../../assets/figures/thesis/ch04/fig-4-19e.svg) | ![C0M100](../../assets/figures/thesis/ch04/fig-4-19f.svg) |
 
-**Fig. 4.19** — Efficacité énergétique pour chacune des applications du
+**Fig. 4.19** : Efficacité énergétique pour chacune des applications du
 benchmark synthétique, durant l'utilisation du contrôleur.
 
 Figure [4.19](#fig-4-19) montre l'évolution de l'efficacité énergétique pour
@@ -1177,7 +1177,7 @@ optimales.
 |  | Gains (CpJ) | 4.8% | 3.0% | 1.4% | 2.6% | 11.2% | 20.5% |
 |  | #cores, freq(GHz) | 19, 2.1 | 13, 1.9 | 8, 1.9 | 4, 2.1 | 3, 2.1 | 1, 1.9 |
 
-**Tableau 4.5** — Résultats du contrôleur pour chacune des applications du
+**Tableau 4.5** : Résultats du contrôleur pour chacune des applications du
 benchmark synthétique.
 
 Il faut cependant être vigilant concernant ces gains. En effet, nous obtenons
@@ -1207,7 +1207,7 @@ phases. Le reste du set-up expérimental est le même que pour la section
 |:--:|:--:|
 | ![CpJ pour les 209 configurations du serveur](../../assets/figures/thesis/ch04/fig-4-20a.png) | ![Zoom sur les configurations optimales: 208 et 203 respectivement pour la phase 1 et la phase 2.](../../assets/figures/thesis/ch04/fig-4-20b.png) |
 
-**Fig. 4.20** — Caractérisation de l'application SRAD, sur le serveur Intel, en
+**Fig. 4.20** : Caractérisation de l'application SRAD, sur le serveur Intel, en
 répartissant les ressources équitablement parmi les sockets.
 
 Nous évaluons notre système de contrôle sur une application multi-phase connue:
@@ -1230,7 +1230,7 @@ la phase haute et la phase basse.
 |:--:|
 | ![Actions du contrôleur i.e. configuration.](../../assets/figures/thesis/ch04/fig-4-21b.svg) |
 
-**Fig. 4.21** — Traces de fonctionnement du contrôleur, pour SRAD.
+**Fig. 4.21** : Traces de fonctionnement du contrôleur, pour SRAD.
 
 Les résultats obtenus avec notre système de contrôle sont exposés sur les
 figures [4.21](#fig-4-21) et [4.22](#fig-4-22). Tout d'abord, une vue d'ensemble
@@ -1259,7 +1259,7 @@ courte période d'exploration. Ce pourcentage peut sur le long terme être mis �
 |:--:|
 | ![Actions du contrôleur i.e. configuration.](../../assets/figures/thesis/ch04/fig-4-22c.svg) |
 
-**Fig. 4.22** — Zoom post-entraînement _ Traces de fonctionnement du contrôleur,
+**Fig. 4.22** : Zoom post-entraînement _ Traces de fonctionnement du contrôleur,
 pour SRAD.
 
 La première remarque que nous pouvons faire est que le système converge vers une
@@ -1306,7 +1306,7 @@ logiquement nos gains moyens.
 | **vs. Ondemand** | $\delta$ | -11.8% | 1.5% | -12.9% |
 | **vs. Conservative** | $\delta$ | -10.6% | -3.7% | -12.8% |
 
-**Tableau 4.6** — Différences ($\delta$) en efficacité énergétique (CpJ) de notre
+**Tableau 4.6** : Différences ($\delta$) en efficacité énergétique (CpJ) de notre
 contrôleur, en comparaison avec les gouverneurs Linux: Powersave, Performance,
 Ondemand et Conservative.
 
@@ -1337,7 +1337,7 @@ contrairement aux phases de SRAD dans la section précédente.
 |:--:|
 | ![Actions du contrôleur i.e. configuration.](../../assets/figures/thesis/ch04/fig-4-23b.png) |
 
-**Fig. 4.23** — Traces de fonctionnement du contrôleur, pour le benchmark à 2
+**Fig. 4.23** : Traces de fonctionnement du contrôleur, pour le benchmark à 2
 phases.
 
 Comme visible sur la figure [4.23a](#fig-4-23a), les deux phases sont clairement
@@ -1375,7 +1375,7 @@ gouverneurs Linux.
 |:--:|
 | ![Actions du contrôleur i.e. configuration.](../../assets/figures/thesis/ch04/fig-4-24b.svg) |
 
-**Fig. 4.24** — Traces de fonctionnement du contrôleur, pour le benchmark à 2
+**Fig. 4.24** : Traces de fonctionnement du contrôleur, pour le benchmark à 2
 phases.
 
 **Vérification:** Enfin, nous proposons ici de valider l'intérêt de

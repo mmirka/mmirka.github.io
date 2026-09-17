@@ -100,9 +100,9 @@ nav:
   - Home: index.md
   - Projects:
       - projects/index.md
-      - OpenMP energy efficiency: projects/omp-energy-rl.md
-      - Optimizing NoC topologies: projects/gannoc.md
-      - Generating heterogeneous NoCs: projects/m-rwgan.md
+      - Online RL control of OpenMP energy efficiency: projects/omp-energy-rl.md
+      - GANNoC: projects/gannoc.md
+      - M-RWGAN: projects/m-rwgan.md
   - Figures:
       - dataviz/index.md
       - Distributions:

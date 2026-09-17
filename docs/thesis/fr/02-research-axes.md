@@ -189,7 +189,7 @@ largement répandu.
 
 ![OpenMP: mécanismes Fork et Join](../../assets/figures/thesis/ch02/fig-2-1.png)
 
-**Fig. 2.1** — OpenMP: mécanismes *Fork* et *Join*.
+**Fig. 2.1** : OpenMP: mécanismes *Fork* et *Join*.
 
 Le parallélisme sous OpenMP est majoritairement basé sur l'utilisation de
 processus légers, aussi appelés threads. Il existe, depuis la version OpenMP
@@ -212,7 +212,7 @@ maître.
 
 ![Schéma explicatif du concept de chunk](../../assets/figures/thesis/ch02/fig-2-2.svg)
 
-**Fig. 2.2** — Schéma explicatif du concept de chunk.
+**Fig. 2.2** : Schéma explicatif du concept de chunk.
 
 Parmi les fonctionnalités de OpenMP, nous nous intéressons aux boucles
 parallélisées (e.g. boucle *for*). À l'intérieur de ces boucles, le workload
@@ -243,7 +243,7 @@ seront donc celles contenant des boucles *for* parallélisables.
 
 ![Étapes d'exécution d'un workload OpenMP](../../assets/figures/thesis/ch02/fig-2-3.png)
 
-**Fig. 2.3** — Étapes d'exécution d'un workload OpenMP.
+**Fig. 2.3** : Étapes d'exécution d'un workload OpenMP.
 
 Sur la figure [2.3](#fig-2-3) sont décrites les différentes étapes d'exécution
 d'un workload OpenMP constitué de boucles parallèles, du niveau utilisateur au
@@ -424,7 +424,7 @@ lesquels aucun modèle de système satisfaisant ne peut être construit.
 
 ![Diagramme de concept du RL](../../assets/figures/thesis/ch02/fig-2-4.svg)
 
-**Fig. 2.4** — Diagramme de concept du RL.
+**Fig. 2.4** : Diagramme de concept du RL.
 
 Dans l'apprentissage par renforcement, on définit l'algorithme de contrôle (au
 sens du code et de ses variables) comme l'*agent*. Ce dernier interagit avec
@@ -514,7 +514,7 @@ d'applications exécutables.
 
 ![Exemple d'une architecture de SoC multi-cœurs](../../assets/figures/thesis/ch02/fig-2-5.svg)
 
-**Fig. 2.5** — Exemple d'une architecture de SoC multi-cœurs.
+**Fig. 2.5** : Exemple d'une architecture de SoC multi-cœurs.
 
 Le module d'interconnexion est l'élément permettant de connecter l'ensemble des
 composants présents dans le système et est considéré comme la clef de voûte des
@@ -561,7 +561,7 @@ graphes va plus loin.
 
 ![Exemple de topologie mesh avec l'architecture des routeurs à buffers d'entrée](../../assets/figures/thesis/ch02/fig-2-6.png)
 
-**Fig. 2.6** — Exemple de topologie *mesh* avec l'architecture des routeurs à
+**Fig. 2.6** : Exemple de topologie *mesh* avec l'architecture des routeurs à
 buffers d'entrée. *source:* [\[56\]](references.md#ref-56)
 
 La figure [2.6](#fig-2-6) extraite de la thèse de Charles Effiong
@@ -666,7 +666,7 @@ uniquement sur la base de ces trafics [\[15\]](references.md#ref-15).
 
 ![Courbe de saturation d'un réseau](../../assets/figures/thesis/ch02/fig-2-7.svg)
 
-**Fig. 2.7** — Courbe de saturation d'un réseau.
+**Fig. 2.7** : Courbe de saturation d'un réseau.
 
 Afin d'évaluer les performances d'un NoC à supporter un trafic, on définit la
 métrique de latence qui désigne le temps moyen que met un message à arriver à
@@ -761,7 +761,7 @@ construction d'un outil de CAO servant à la création de NoC optimisés.
 
 ![Schéma représentatif d'un GAN](../../assets/figures/thesis/ch02/fig-2-8.png)
 
-**Fig. 2.8** — Schéma représentatif d'un GAN.
+**Fig. 2.8** : Schéma représentatif d'un GAN.
 
 **Réseaux antagonistes génératifs:** Un GAN est une architecture de réseau de
 neurones proposée pour la première fois en 2014 par Ian J. Goodfellow et al.

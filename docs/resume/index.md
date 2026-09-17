@@ -20,14 +20,13 @@ and delivering AI solutions for telecommunication network optimization.
 - Pioneered applications of Generative AI for adaptive distributed computing
   during PhD research.
 - Published four international conference papers, including at DATE, on machine
-  learning and distributed systems — all listed on the
-  [publications](../publications/index.md) page.
+  learning and distributed systems. See [publications](../publications/index.md).
 - Delivered lectures and tutorials at master's levels across multiple
-  engineering schools — see [teaching](../teaching/index.md).
+  engineering schools. See [teaching](../teaching/index.md).
 
 ## Career history
 
-### Lead Data Scientist — ITSF / NJJ Holding, Lyon, France
+### Lead Data Scientist @ ITSF / NJJ Holding, Lyon, France
 
 **January 2022 – August 2026.** Founded and led the AI and Data Science R&D
 division, for telecommunications and network optimization.
@@ -59,7 +58,7 @@ Projects:
 Technical stack: Python (NumPy, Pandas, Polars, Scikit-Learn, TensorFlow,
 Keras), SQL, Superset, Airflow, Cypher.
 
-### PhD Candidate — Université de Montpellier / LIRMM, Montpellier, France
+### PhD Candidate @ Université de Montpellier / LIRMM, Montpellier, France
 
 **October 2018 – October 2021.** A three-year research program applying machine
 learning to distributed computing systems, focused on energy efficiency, while
@@ -68,8 +67,7 @@ teaching at undergraduate and graduate levels.
 Doctoral research:
 
 - Dissertation: *Exploration of Machine Learning Techniques for Multi-Level
-  Adaptive Control of Distributed Computing* — on this site in full, see
-  [Thesis](../thesis/index.md).
+  Adaptive Control of Distributed Computing*. See [Thesis](../thesis/index.md).
 - Applied Deep Reinforcement Learning and Generative AI to adaptivity and
   hardware design in distributed computing.
 - Published four international peer-reviewed papers, including at DATE.
@@ -77,7 +75,7 @@ Doctoral research:
   and artificial intelligence.
 - Delivered lectures and tutorials to bachelor's and master's students.
 
-Projects — in detail under [Projects](../projects/index.md), each with the
+Projects, in detail under [Projects](../projects/index.md), each with the
 public repository that reproduces it:
 
 - **Deep reinforcement learning for energy efficiency.** An energy-efficiency
@@ -95,7 +93,7 @@ public repository that reproduces it:
 Technical stack: Python (NumPy, Pandas, Scikit-Learn, TensorFlow, Keras), Bash,
 C++, OpenMP.
 
-### Research Intern, Robotics — Bristol Robotics Laboratory, Bristol, UK
+### Research Intern, Robotics @ Bristol Robotics Laboratory, Bristol, UK
 
 **June 2017 – August 2017.** Bio-inspired flight systems: study, design and
 prototype implementation of a flapping-wing Micro Aerial Vehicle (MAV) inspired
@@ -108,7 +106,7 @@ Technical stack: Matlab, Solidworks.
 | Years | Qualification | Institution | Subject |
 |---|---|---|---|
 | 2018 – 2021 | PhD in Computer Science (AI & Machine Learning) | Université de Montpellier – LIRMM, France | *[Exploration of Machine Learning Techniques for Multi-Level Adaptive Control of Distributed Computing](../thesis/index.md)*  |
-| 2017 – 2018 | MSc | Cranfield University, UK | Autonomous Vehicle Dynamics and Control — thesis on decentralized control of spacecraft in a constellation |
+| 2017 – 2018 | MSc | Cranfield University, UK | Autonomous Vehicle Dynamics and Control, thesis on decentralized control of spacecraft in a constellation |
 | 2013 – 2018 | Engineering Degree | Polytech Montpellier, France | Microelectronics and Automation, Robotics specialization |
 
 ## Teaching
@@ -134,37 +132,37 @@ systems, including at DATE, all open access on HAL. The
 [publications page](../publications/index.md) lists them with DOI and HAL
 record; the HAL profile is at <https://cv.hal.science/maxime-mirka>.
 
-The thesis is on this site chapter by chapter — see
-[Thesis](../thesis/index.md) — and the plots behind it are in the
+The thesis is on this site, see
+[Thesis](../thesis/index.md), and the plots behind it are in the
 [figure gallery](../dataviz/index.md).
 
 ## Skills
 
 Technical skills:
 
-- **ML & AI** — Deep learning, reinforcement learning, generative AI (GANs), LLMs & RAG, time-series forecasting, 
+- **ML & AI** : Deep learning, reinforcement learning, generative AI (GANs), LLMs & RAG, time-series forecasting, 
 anomaly detection, classification, pattern mining, recommendation systems.
-- **Statistics & evaluation** — Exploratory data analysis, feature engineering, data cleaning, performance benchmarking 
+- **Statistics & evaluation** : Exploratory data analysis, feature engineering, data cleaning, performance benchmarking 
 against baselines, evaluation beyond aggregate accuracy.
-- **Large-scale data** — Analysis of large, complex datasets in distributed environments (large-scale telecom data, distributed
+- **Large-scale data** : Analysis of large, complex datasets in distributed environments (large-scale telecom data, distributed
 computing).
-- **Languages** — Python (NumPy, Pandas, Polars, Scikit-Learn, TensorFlow, Keras), SQL, Cypher (graph database), C++, Bash.
-- **Data engineering / MLOps** — Airflow (pipeline orchestration), production validation & monitoring frameworks.
-- **Data visualization** — Superset (dashboards), Matplotlib, Plotly, Seaborn.
+- **Languages** : Python (NumPy, Pandas, Polars, Scikit-Learn, TensorFlow, Keras), SQL, Cypher (graph database), C++, Bash.
+- **Data engineering / MLOps** : Airflow (pipeline orchestration), production validation & monitoring frameworks.
+- **Data visualization** : Superset (dashboards), Matplotlib, Plotly, Seaborn.
 
 Soft skills:
 
-- **Leadership** — Founded and led an R&D division, project monitoring, prioritization.
-- **Method** — Problem solving, critical thinking, research, literature review, rigor, autonomy.
+- **Leadership** : Founded and led an R&D division, project monitoring, prioritization.
+- **Method** : Problem solving, critical thinking, research, literature review, rigor, autonomy.
 - **Collaboration** across multidisciplinary teams, translating operational needs into ML problems.
-- **Teaching** — Mentoring (intern, MSc apprentice), 180+ hours of lecturing, communicating complex ML concepts to non-
+- **Teaching** : Mentoring (intern, MSc apprentice), 180+ hours of lecturing, communicating complex ML concepts to non-
 specialist audiences
 
 ## Languages
 
-- **French** — native.
-- **English** — fluent (TOEIC 945/990).
-- **Spanish** — fair working knowledge, to reactivate.
+- **French** : native.
+- **English** : fluent (TOEIC 945/990).
+- **Spanish** : fair working knowledge, to reactivate.
 
 ## Interests
 
@@ -172,9 +170,9 @@ Astrophysics, drumming, photography. Sport: fitness, climbing, hiking.
 
 ## Useful Links
 
-- GitHub — <https://github.com/mmirka>
-- LinkedIn — <https://www.linkedin.com/in/maxime-mirka-phd-1a3324116>
-- HAL — <https://cv.hal.science/maxime-mirka>
+- GitHub : <https://github.com/mmirka>
+- LinkedIn : <https://www.linkedin.com/in/maxime-mirka-phd-1a3324116>
+- HAL : <https://cv.hal.science/maxime-mirka>
 
 Based in Lyon, France. 
 

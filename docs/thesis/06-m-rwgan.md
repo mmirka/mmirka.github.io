@@ -51,7 +51,7 @@ applications, apart from the *Bodytrack* and *Swaption* benchmarks, for which
 
 ![Number of packets received per core for 8 applications of the Parsec benchmark run on 64 cores](../assets/figures/thesis/ch06/fig-6-1.svg)
 
-**Fig. 6.1** — Number of packets received per core for 8 applications of the
+**Fig. 6.1** : Number of packets received per core for 8 applications of the
 Parsec benchmark run on 64 cores
 
 Figure [6.1](#fig-6-1) sets out the number of packets received during the
@@ -123,7 +123,7 @@ them.
 
 ![Diagram of the Multi-Objectives RWGAN, with the gradient descent of the generator's training shown as red arrows](../assets/figures/thesis/ch06/fig-6-2.svg)
 
-**Fig. 6.2** — Diagram of the Multi-Objectives RWGAN, with the gradient descent
+**Fig. 6.2** : Diagram of the Multi-Objectives RWGAN, with the gradient descent
 of the generator's training shown as red arrows.
 
 We propose here an improvement of the RWGAN presented in the previous chapter.
@@ -235,7 +235,7 @@ and of classical structure (5 ports: North, South, East, West, Local).
 |:--:|:--:|:--:|:--:|
 | **Buffer size** | 12 | 4 | 2 |
 
-**Table 6.1** — Buffer size in *flits*.
+**Table 6.1** : Buffer size in *flits*.
 
 **Simulator** In order to obtain, for different traffic patterns, the
 performance and energy consumption measurements of the produced NoCs, we use
@@ -259,7 +259,7 @@ Table [6.2](#tab-6-2) presents the main technology parameters used in our study.
 |:--:|:--:|:--:|:--:|
 | $45nm$ | $1.0V$ | $650MHz$ | Matrix |
 
-**Table 6.2** — Orion3.0: technology parameters
+**Table 6.2** : Orion3.0: technology parameters
 
 **M-RWGAN architecture and parameters** Our M-RWGAN is built with three reward
 blocks: one reward for the saturation threshold, a second reward for the energy
@@ -296,7 +296,7 @@ M-RWGAN are given in tables [6.3](#tab-6-3) and [6.4](#tab-6-4).
 | Dimensions | A: 64x64<br>X: 64x3 | 16 | 32 | 64 | 1 |
 | Activation<br>function | *–* | *LeakyReLU<br>($\alpha = 0.2$)* | *LeakyReLU<br>($\alpha = 0.2$)* | *LeakyReLU<br>($\alpha = 0.2$)* | *Linear* |
 
-**Table 6.3** — Dimensioning of the Generator and Critic modules of the M-RWGAN
+**Table 6.3** : Dimensioning of the Generator and Critic modules of the M-RWGAN
 
 > Rendered as two tables; the printed thesis shows them side by side
 > (Table 6.3).
@@ -333,7 +333,7 @@ matrix $X$ of the evaluated graphs.
 | Dimensions | X: 8x8x3 | 128<br>filter: 3x3<br>stride: 1 | 32<br>filter: 3x3<br>stride: 2 | 128 | 1 |
 | Activation<br>function | – | *LeakyReLU*<br>*($\alpha = 0.2$)* | *LeakyReLU*<br>*($\alpha = 0.2$)* | *LeakyReLU*<br>*($\alpha = 0.2$)* | *Sigmoid* |
 
-**Table 6.4** — Dimensioning of the various Rewards of the M-RWGAN
+**Table 6.4** : Dimensioning of the various Rewards of the M-RWGAN
 
 > Rendered as two tables; the printed thesis shows them side by side
 > (Table 6.4).
@@ -379,7 +379,7 @@ characteriztics of the generated NoCs.
 
 ![Normalized amount of traffic received per router for 2 synthetic traffic patterns run on an 8x8 mesh](../assets/figures/thesis/ch06/fig-6-3.svg)
 
-**Fig. 6.3** — Normalized amount of traffic received per router for 2 synthetic
+**Fig. 6.3** : Normalized amount of traffic received per router for 2 synthetic
 traffic patterns run on an 8x8 mesh: hotspot30 (i.e. 30% of the traffic is
 destined for router 54), and uniform.
 
@@ -427,7 +427,7 @@ consumption, respectively figures [6.4a](#fig-6-4a) and
 |:--:|:--:|
 | ![Distribution of the NoCs of the dataset according to their saturation threshold](../assets/figures/thesis/ch06/fig-6-4a.png) | ![Distribution of the NoCs of the dataset according to their power (mW) at the saturation threshold](../assets/figures/thesis/ch06/fig-6-4b.png) |
 
-**Fig. 6.4** — Distribution of the uniform dataset.
+**Fig. 6.4** : Distribution of the uniform dataset.
 
 One observes a substantial bias around the saturation threshold of 13% and the
 power of 1200mW. One may therefore expect the training of the GAN, without the
@@ -462,7 +462,7 @@ what follows how the learning of the GAN behaves.
 |:--:|
 | ![Power (mW) at the saturation threshold](../assets/figures/thesis/ch06/fig-6-5b.svg) |
 
-**Fig. 6.5** — Mean router size, as a function of the saturation threshold
+**Fig. 6.5** : Mean router size, as a function of the saturation threshold
 [6.5a](#fig-6-5a) and of the power consumption [6.5b](#fig-6-5b) of the NoCs,
 for **uniform** traffic.
 
@@ -480,7 +480,7 @@ consumption, respectively figures [6.6a](#fig-6-6a) and
 |:--:|:--:|
 | ![Distribution of the NoCs of the dataset according to their saturation threshold](../assets/figures/thesis/ch06/fig-6-6a.png) | ![Distribution of the NoCs of the dataset according to their power (mW) at the saturation threshold](../assets/figures/thesis/ch06/fig-6-6b.png) |
 
-**Fig. 6.6** — Distribution of the hotspot30 dataset.
+**Fig. 6.6** : Distribution of the hotspot30 dataset.
 
 One notices the presence of biases on certain values. In particular, we note a
 higher density of NoCs having a power around 325mW and 250mW. Likewise, two
@@ -515,7 +515,7 @@ of having the router architecture correlated with the traffic load.
 |:--:|
 | ![Power (mW) at the saturation threshold](../assets/figures/thesis/ch06/fig-6-7b.svg) |
 
-**Fig. 6.7** — Mean router size, as a function of the saturation threshold
+**Fig. 6.7** : Mean router size, as a function of the saturation threshold
 [6.7a](#fig-6-7a) and of the power consumption [6.7b](#fig-6-7b) of the NoCs,
 for **hotspot30** traffic.
 
@@ -557,7 +557,7 @@ reward ($\lambda = 0.2$).
 |:--:|:--:|
 | ![beta = 1](../assets/figures/thesis/ch06/fig-6-8a.svg) | ![beta = 10](../assets/figures/thesis/ch06/fig-6-8b.svg) |
 
-**Fig. 6.8** — Mean router size, as a function of the value of $\beta$, for a
+**Fig. 6.8** : Mean router size, as a function of the value of $\beta$, for a
 training run of 300 epochs on the uniform traffic, with the saturation reward
 only (Sat100).
 
@@ -584,7 +584,7 @@ the bias of the critic.
 |:--:|
 | ![epoch 300](../assets/figures/thesis/ch06/fig-6-9e.svg) |
 
-**Fig. 6.9** — Mean router size, as a function of the training step (epoch), for
+**Fig. 6.9** : Mean router size, as a function of the training step (epoch), for
 a training run of 300 epochs on the uniform traffic, with the saturation reward
 only (Sat100).
 
@@ -598,7 +598,7 @@ only (Sat100).
 |:--:|
 | ![Presence rate of the router types](../assets/figures/thesis/ch06/fig-6-10c.svg) |
 
-**Fig. 6.10** — Evolution of the various values associated with the training of
+**Fig. 6.10** : Evolution of the various values associated with the training of
 the M-RWGAN, for a training run of 300 epochs on the uniform traffic, with the
 saturation reward only (Sat100).
 
@@ -662,7 +662,7 @@ generator towards the production of NoCs optimizing these two characteriztics
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../assets/figures/thesis/ch06/fig-6-11e.svg) | ![Sat10Pow90](../assets/figures/thesis/ch06/fig-6-11f.svg) | ![Pow100](../assets/figures/thesis/ch06/fig-6-11g.svg) |
 
-**Fig. 6.11** — Mean router size, as a function of the proportion between the
+**Fig. 6.11** : Mean router size, as a function of the proportion between the
 Sat and Pow rewards, for a training run of 300 epochs on the uniform
 traffic.
 
@@ -678,7 +678,7 @@ traffic.
 |  | Sat10Pow90 | 0.18 | 0.86 | 15.2% | 33.3% | 51.5 |
 |  | Pow100 | 0.08 | 0.95 | 5.3% | 23.7% | 71% |
 
-**Table 6.5** — Values of the various training variables. R-Sat and R-Pow
+**Table 6.5** : Values of the various training variables. R-Sat and R-Pow
 correspond respectively to the scores of the saturation threshold reward and of
 the consumption reward. t-Big, t-Medium and t-Small are the presence rates
 (i.e. distribution) of the respective router types in the generated NoCs.
@@ -734,7 +734,7 @@ presence rates of the router types) is available in table
 |:--:|:--:|:--:|
 | ![Sat30Area70](../assets/figures/thesis/ch06/fig-6-12e.svg) | ![Sat10Area90](../assets/figures/thesis/ch06/fig-6-12f.svg) | ![Area100](../assets/figures/thesis/ch06/fig-6-12g.svg) |
 
-**Fig. 6.12** — Mean router size, as a function of the proportion between the
+**Fig. 6.12** : Mean router size, as a function of the proportion between the
 Sat and Ar rewards, for a training run of 300 epochs on the uniform
 traffic.
 
@@ -750,7 +750,7 @@ traffic.
 |  | Sat10Area90 | 0.33 | 0.86 | 0.8% | 66.3% | 32.9% |
 |  | Area100 | 0.12 | 0.93 | 0% | 32.8% | 67.2% |
 
-**Table 6.6** — Values of the various training variables. Sat and Area rewards,
+**Table 6.6** : Values of the various training variables. Sat and Area rewards,
 uniform traffic.
 
 As expected, one observes an overall reduction of the router size.
@@ -790,7 +790,7 @@ as a NoC having a better energy efficiency.
 |:--:|:--:|
 | ![Saturation threshold and power](../assets/figures/thesis/ch06/fig-6-13a.svg) | ![Saturation threshold and area](../assets/figures/thesis/ch06/fig-6-13b.svg) |
 
-**Fig. 6.13** — Comparison of the generated NoCs and of the dataset according to
+**Fig. 6.13** : Comparison of the generated NoCs and of the dataset according to
 different metrics (saturation threshold, energy consumed, area), when subjected
 to uniform traffic.
 
@@ -854,7 +854,7 @@ the increase of the proportion of the Pow reward from 0% to 100%.
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../assets/figures/thesis/ch06/fig-6-14e.svg) | ![Sat10Pow90](../assets/figures/thesis/ch06/fig-6-14f.svg) | ![Pow100](../assets/figures/thesis/ch06/fig-6-14g.svg) |
 
-**Fig. 6.14** — Mean router size, as a function of the proportion between the
+**Fig. 6.14** : Mean router size, as a function of the proportion between the
 Sat and Pow rewards, for a training run of 300 epochs on the hotspot30
 traffic.
 
@@ -870,7 +870,7 @@ traffic.
 |  | Sat10Pow90 | 0.28 | 0.9 | 12.5% | 40% | 47.5% |
 |  | Pow100 | 0.13 | 0.92 | 8.5% | 34.1% | 57.4% |
 
-**Table 6.7** — Values of the various training variables. Sat and Pow rewards,
+**Table 6.7** : Values of the various training variables. Sat and Pow rewards,
 hotspot30 traffic.
 
 Finally, we train our M-RWGAN with combinations of the Sat reward and of the
@@ -892,7 +892,7 @@ optimized so as to penalize the performance of the NoC as little as possible.
 |:--:|:--:|:--:|
 | ![Sat30Area70](../assets/figures/thesis/ch06/fig-6-15e.svg) | ![Sat10Area90](../assets/figures/thesis/ch06/fig-6-15f.svg) | ![Area100](../assets/figures/thesis/ch06/fig-6-15g.svg) |
 
-**Fig. 6.15** — Mean router size, as a function of the proportion between the
+**Fig. 6.15** : Mean router size, as a function of the proportion between the
 Sat and Ar rewards, for a training run of 300 epochs on the hotspot30
 traffic.
 
@@ -908,7 +908,7 @@ traffic.
 |  | Sat10Area90 | 0.66 | 0.9 | 4% | 40% | 56% |
 |  | Area100 | 0.21 | 0.94 | 0% | 35% | 65% |
 
-**Table 6.8** — Values of the various training variables. Sat and Area rewards,
+**Table 6.8** : Values of the various training variables. Sat and Area rewards,
 hotspot30 traffic.
 
 One notices however a lack of precision on the hotspot30 traffic. Indeed,
@@ -950,7 +950,7 @@ traffic loads (i.e. the hotspot) are reduced.
 |:--:|:--:|:--:|
 | ![Sat30Pow70](../assets/figures/thesis/ch06/fig-6-16e.svg) | ![Sat10Pow90](../assets/figures/thesis/ch06/fig-6-16f.svg) | ![Pow100](../assets/figures/thesis/ch06/fig-6-16g.svg) |
 
-**Fig. 6.16** — Mean router size, as a function of the proportion between the
+**Fig. 6.16** : Mean router size, as a function of the proportion between the
 Sat and Pow rewards, for a training run of 300 epochs on the hotspot30
 traffic. Rewards relying on a CNN.
 
@@ -966,7 +966,7 @@ traffic. Rewards relying on a CNN.
 |  | Sat10Pow90 | 0.37 | 0.9 | 14.7% | 35.9% | 49.4% |
 |  | Pow100 | 0.10 | 0.95 | 21% | 36.3% | 42.7% |
 
-**Table 6.9** — Values of the various training variables. Sat and Pow rewards,
+**Table 6.9** : Values of the various training variables. Sat and Pow rewards,
 hotspot30 traffic. Rewards relying on a CNN.
 
 Finally, the last experiments studied are for the Sat and Area rewards in CNN.
@@ -994,7 +994,7 @@ and up to 68.4% of Small routers.
 |:--:|:--:|:--:|
 | ![Sat30Area70](../assets/figures/thesis/ch06/fig-6-17e.svg) | ![Sat10Area90](../assets/figures/thesis/ch06/fig-6-17f.svg) | ![Area100](../assets/figures/thesis/ch06/fig-6-17g.svg) |
 
-**Fig. 6.17** — Mean router size, as a function of the proportion between the
+**Fig. 6.17** : Mean router size, as a function of the proportion between the
 Sat and Area rewards, for a training run of 300 epochs on the hotspot30
 traffic. Rewards relying on CNNs.
 
@@ -1010,7 +1010,7 @@ traffic. Rewards relying on CNNs.
 |  | Sat10Area90 | 0.89 | 0.91 | 5% | 27.6% | 68.4% |
 |  | Area100 | 0.20 | 0.94 | 0% | 33.4% | 66.6% |
 
-**Table 6.10** — Values of the various training variables. Sat and Area rewards,
+**Table 6.10** : Values of the various training variables. Sat and Area rewards,
 hotspot30 traffic. Rewards relying on a CNN.
 
 <a id="fig-6-18"></a>
@@ -1019,7 +1019,7 @@ hotspot30 traffic. Rewards relying on a CNN.
 |:--:|:--:|
 | ![Saturation threshold and power](../assets/figures/thesis/ch06/fig-6-18a.svg) | ![Saturation threshold and area](../assets/figures/thesis/ch06/fig-6-18b.svg) |
 
-**Fig. 6.18** — Comparison of the generated NoCs and of the dataset according to
+**Fig. 6.18** : Comparison of the generated NoCs and of the dataset according to
 different metrics (saturation threshold, energy consumed, area), when subjected
 to hotspot30 traffic, for the GCN rewards.
 
@@ -1029,7 +1029,7 @@ to hotspot30 traffic, for the GCN rewards.
 |:--:|:--:|
 | ![6.19a](../assets/figures/thesis/ch06/fig-6-19a.svg) | ![6.19b](../assets/figures/thesis/ch06/fig-6-19b.svg) |
 
-**Fig. 6.19** — Comparison of the generated NoCs and of the dataset according to
+**Fig. 6.19** : Comparison of the generated NoCs and of the dataset according to
 different metrics (saturation threshold, energy consumed, area), when subjected
 to hotspot30 traffic, for the CNN rewards.
 
@@ -1135,7 +1135,7 @@ combinations, which we simulate in full for the hotspot30 traffic.
 
 ![Euclidean distance between the best generated NoC of each learning run and the true Pareto front](../assets/figures/thesis/ch06/fig-6-20.svg)
 
-**Fig. 6.20** — Euclidean distance between the best generated NoC of each
+**Fig. 6.20** : Euclidean distance between the best generated NoC of each
 learning run and the true Pareto front, together with the detail for each
 objective. Measurement of the IGD - i.e. mean.
 

@@ -10,22 +10,22 @@ topologies a designer actually wants.
 
 ![Block diagram of the GANNoC framework: the user defines topology, simulation and reward constraints; a dataset of NoC topologies with their simulated fitness trains a GAN, which generates new topologies for the NoC simulator to evaluate](../assets/figures/thesis/ch05/fig-5-3.svg)
 
-**Thesis Fig. 5.3** — The GANNoC framework. From
+**Thesis Fig. 5.3** : The GANNoC framework. From
 [chapter 5](../thesis/05-gannoc.md).
 
 ## The problem
 
 A Network-on-Chip carries traffic between the blocks of a multicore chip, and
-its topology — which router is wired to which — sets the latency and much of
+its topology (i.e. which router is wired to which) sets the latency and much of
 the communication energy.
 
 ![A 9-router graph shown alongside its 9×9 binary symmetric adjacency matrix](../assets/figures/thesis/ch05/fig-5-1.svg)
 
-**Thesis Fig. 5.1** — A topology and its adjacency matrix.
+**Thesis Fig. 5.1** : A topology and its adjacency matrix.
 
-A topology over 9 routers is a 9×9 binary symmetric adjacency matrix; a
+A topology over 9 routers is a 9×9 binary symmetric adjacency matrix. A
 *usable* one has every router wired, the graph connected, and no router above
-degree 4 — a router exposes four external ports (N/E/S/W) plus one local port.
+degree 4 : a router exposes four external ports (N/E/S/W) plus one local port (ignored here).
 
 Search is hard twice over. The space satisfying those constraints is far too
 large to enumerate, and scoring a candidate for packet latency needs a
@@ -42,22 +42,22 @@ into a topology, then checked for validity.
 
 ![Diagram of the Reward-Wasserstein GAN: noise into a generator, the generated NoC topology scored by both a critic and a frozen reward network, the two combined into the generator's training feedback](../assets/figures/thesis/ch05/fig-5-4.svg)
 
-**Thesis Fig. 5.4** — The RWGAN and its generator loss.
+**Thesis Fig. 5.4** : The RWGAN and its generator loss.
 
 The **RWGAN** ("Reward-Wasserstein GAN") adds one signal. A separate CNN with
 the critic's architecture, pretrained on its own, regresses a topology's min-max
 **normalized connection count** into `[-1, 1]`. It is then frozen
 (`trainable = False`) and its MSE against a target count is mixed into the
 generator loss through a weight `LAMBDA`: 1.0 for epochs 0–100, so training
-starts purely adversarial, then annealed by −0.005 every 5 epochs down to 0.9 —
-the paper's 10 % reward / 90 % critic split. Restoring the floor to 1.0 recovers
+starts purely adversarial, then annealed by −0.005 every 5 epochs down to 0.9 (i.e.
+the paper's 10 % reward / 90 % critic split). Restoring the floor to 1.0 recovers
 the plain WGAN-GP baseline, the point of comparison. Under uniform traffic
 denser topologies correlate with lower latency, so connection count is a cheap
 stand-in for the expensive objective.
 
 Training data needs no simulator: valid 9-router topologies built by random
 construction (the paper's "Algorithm 1"), stratified by connection count over
-8–18 — bare spanning tree up to every router saturated at degree 4 —
+8–18 (bare spanning tree up to every router saturated at degree 4) 
 deduplicated, roughly 10k unique per count.
 
 ## What reproduces
@@ -70,10 +70,10 @@ weight 10, batch 64, 250 epochs.
 
 ![Two overlaid histograms of connection count, WGAN against RWGAN, each with its mean marked](../assets/figures/gannoc/connection_histogram.png)
 
-**Fig.** — The WGAN vs RWGAN comparison, drawn by `connection_histogram.py`.
+**Fig.** : The WGAN vs RWGAN comparison, drawn by `connection_histogram.py`.
 See [the recipe page](../dataviz/distributions-histogram.md).
 
-The figure folder is self-contained — numpy, matplotlib and a vendored
+The figure folder is self-contained: numpy, matplotlib and a vendored
 `noc_metrics.py`, no TensorFlow, no download. It works from two bundled sets of
 446 valid generated topologies each, drawn from identical noise seeds, with no
 training: `connection_histogram.py` draws the comparison above,
@@ -85,10 +85,10 @@ checkpoints ship, so the RWGAN script runs without training a reward first.
 **The latency results.** Thesis Figs. 5.8 and 5.9 plot simulated latency against
 injection rate and need an external cycle-accurate simulator (Ratatoskr in the
 paper); nothing here calls one, and no dataset it produces carries latency
-labels — out of scope for a repo carrying graph structure only.
+labels.
 
-**The headline numbers.** The trained generator weights are not shipped —
-retrain locally — and the published figures are quoted, not re-derived: up to
+**The headline numbers.** The trained generator weights are not shipped (i.e. 
+retrain locally) and the published figures are quoted, not re-derived: up to
 ~82 % structurally valid and 100 % novel for the WGAN-GP; mean connection count
 up ~36 % for the RWGAN, validity falling to ~54 % as the degree ≤ 4 constraint
 bites. The latency gain is quoted the same way: 45.4 ns → 43.3 ns, normalized
@@ -100,9 +100,9 @@ the bundled sets describes means of about 12 and 14.
 
 - Repository: <https://github.com/mmirka/GANNoC>
 - Paper: *GANNoC: A Framework for Automatic Generation of NoC Topologies using
-  Generative Adversarial Networks* (RAPIDO 2021) — see
+  Generative Adversarial Networks* (RAPIDO 2021), see
   [Publications](../publications/index.md).
-- Thesis: [Chapter 5 — Optimizing network-on-chip
+- Thesis: [Chapter 5 : Optimizing network-on-chip
   topologies](../thesis/05-gannoc.md)
 - Successor: [M-RWGAN](m-rwgan.md), the multi-objective generalization
 - Figures: [the figure pages](../dataviz/index.md)

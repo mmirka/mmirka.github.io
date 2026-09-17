@@ -92,7 +92,7 @@ computing systems.
 
 ![Simplified execution model of an application.](../assets/figures/thesis/ch03/fig-3-1.svg)
 
-**Fig. 3.1** — Simplified execution model of an application.
+**Fig. 3.1** : Simplified execution model of an application.
 
 We call "governor" any control system intervening on the computing system at the
 runtime level. Figure [3.1](#fig-3-1) describes a three-layer model illustrating
@@ -150,7 +150,7 @@ reinforcement learning.
 | [\[158\]](references.md#ref-158) | 2021 | Scheduling | Deep RL | - | VM performance | IoT simulation |
 | **My Work** | 2020 | DVFS<br>Mapping | Deep RL | Training of the AE training (if needed) | OpenMP support | Multicore system (e.g. Arm big.LITTLE, Intel Xeon E5) |
 
-**Table 3.1** — Comparison of recent methods for the dynamic control of parallel
+**Table 3.1** : Comparison of recent methods for the dynamic control of parallel
 computing.
 
 #### 3.1.2.1 Overview of existing methods
@@ -530,7 +530,7 @@ network.
 
 ![Heterogeneous NoC proposal by HeteroNoC](../assets/figures/thesis/ch03/fig-3-2.png)
 
-**Fig. 3.2** — Heterogeneous NoC proposal by *HeteroNoC*
+**Fig. 3.2** : Heterogeneous NoC proposal by *HeteroNoC*
 [\[110\]](references.md#ref-110). source: [\[110\]](references.md#ref-110)
 
 In the article [\[110\]](references.md#ref-110), Mishra *et al.* propose a
@@ -589,7 +589,7 @@ type of the atoms and of the connections present in the molecules.
 
 ![MolGAN architecture for molecule generation](../assets/figures/thesis/ch03/fig-3-3.png)
 
-**Fig. 3.3** — MolGAN architecture for molecule generation. source:
+**Fig. 3.3** : MolGAN architecture for molecule generation. source:
 [\[38\]](references.md#ref-38)
 
 The approach presented in MolGAN proposes a GAN architecture possessing a third

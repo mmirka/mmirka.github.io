@@ -60,7 +60,7 @@ de cette représentation.
 
 ![Graphe: représentations](../../assets/figures/thesis/ch05/fig-5-1.svg)
 
-**Fig. 5.1** — Graphe: représentations
+**Fig. 5.1** : Graphe: représentations
 
 Il existe différentes matrices permettant de représenter les graphes selon
 différents paramètres. Il y a la matrice d'adjacence (notée $A$) qui constitue
@@ -107,7 +107,7 @@ performance d'un NoC.
 | <a id="fig-5-2c"></a>(c) Impact du nombre de connexions. Trafic = hotspot, TI=10% | <a id="fig-5-2d"></a>(d) Impact de la distance moyenne. Trafic = hotspot, IR=10% |
 | ![Impact du nombre de connexions. Trafic = hotspot, TI=10%](../../assets/figures/thesis/ch05/fig-5-2c.png) | ![Impact de la distance moyenne. Trafic = hotspot, IR=10%](../../assets/figures/thesis/ch05/fig-5-2d.png) |
 
-**Fig. 5.2** — Évaluation des performances de NoC à 9 routeurs.
+**Fig. 5.2** : Évaluation des performances de NoC à 9 routeurs.
 
 Sur la figure [5.2](#fig-5-2), plusieurs graphiques sont présentés pour
 démontrer l'impact des attributs de topologie sur les performances d'un NoC.
@@ -189,7 +189,7 @@ nous fixons le degré maximum de nos graphes à 4.
 
 ![Le framework GANNoC.](../../assets/figures/thesis/ch05/fig-5-3.svg)
 
-**Fig. 5.3** — Le framework GANNoC.
+**Fig. 5.3** : Le framework GANNoC.
 
 Notre solution repose sur deux parties essentielles: (1) un réseau de neurones
 qui a pour objectif d'apprendre à générer des designs de NoC, et (2) un
@@ -223,7 +223,7 @@ devra être généré.
 
 ![Schéma du Reward-Wasserstein GAN et la fonction de perte du générateur.](../../assets/figures/thesis/ch05/fig-5-4.svg)
 
-**Fig. 5.4** — Schéma du Reward-Wasserstein GAN et la fonction de perte du
+**Fig. 5.4** : Schéma du Reward-Wasserstein GAN et la fonction de perte du
 générateur $f\left(Y,W\right)$.
 
 Le GAN utilisé ici étend le principe des WGAN évoqué en section
@@ -393,7 +393,7 @@ Output: The adjacency matrix M of the NoC to create.
 16          else return
 ```
 
-**Algorithme 5.1** — Création de la matrice d'adjacence M d'un NoC
+**Algorithme 5.1** : Création de la matrice d'adjacence M d'un NoC
 
 Nous mettons en œuvre cet algorithme en Python. Le choix de concevoir une base
 de données homogène suivant le nombre de connexions présentes dans un NoC vient
@@ -442,7 +442,7 @@ denses.
 
 <a id="tab-5-1"></a>
 
-**Tableau 5.1** — Dimensionnement du RWGAN.
+**Tableau 5.1** : Dimensionnement du RWGAN.
 
 > Rendered as two tables; the printed thesis shows them side by side (Table 5.1).
 
@@ -485,7 +485,7 @@ dans jusqu'à 82% des cas.
 |:--:|:--:|
 | ![Comparaison selon le nombre de connexions.](../../assets/figures/thesis/ch05/fig-5-5a.svg) | ![Comparaison selon la distance moyenne entre les routeurs](../../assets/figures/thesis/ch05/fig-5-5b.svg) |
 
-**Fig. 5.5** — Comparaisons entre le dataset d'origine et des échantillons
+**Fig. 5.5** : Comparaisons entre le dataset d'origine et des échantillons
 générés par le WGAN. Les valeurs de latence sont évaluées pour un trafic
 uniforme à 10% de taux d'injection.
 
@@ -524,7 +524,7 @@ dans la base de données d'entraînement.
 
 ![Impact du reward sur l'apprentissage du RWGAN.](../../assets/figures/thesis/ch05/fig-5-6.svg)
 
-**Fig. 5.6** — Impact du reward sur l'apprentissage du RWGAN.
+**Fig. 5.6** : Impact du reward sur l'apprentissage du RWGAN.
 
 Comme nous avons pu le remarquer section
 [5.2](#52-noc-topologie-et-performances), sous un trafic uniforme les
@@ -559,7 +559,7 @@ mesure que le reward est inclus dans la boucle d'apprentissage.
 
 ![WGAN vs. RWGAN. Comparaison de la distribution des topologies de NoC générées.](../../assets/figures/thesis/ch05/fig-5-7.svg)
 
-**Fig. 5.7** — WGAN vs. RWGAN. Comparaison de la distribution des topologies de
+**Fig. 5.7** : WGAN vs. RWGAN. Comparaison de la distribution des topologies de
 NoC générées, selon le nombre de connexions (haut) et la latence moyenne des
 paquets (bas).
 
@@ -584,7 +584,7 @@ jusqu'à atteindre le seuil de saturation.
 
 ![Courbes de saturation des NoC générés par le RWGAN et de topologies classiques.](../../assets/figures/thesis/ch05/fig-5-8.svg)
 
-**Fig. 5.8** — Courbes de saturation des NoC générés par le RWGAN et de
+**Fig. 5.8** : Courbes de saturation des NoC générés par le RWGAN et de
 topologies classiques. Les NoC générés sont répartis en trois groupes selon
 leur nombre de connexions: 11, 15 et 16 connexions.
 
@@ -613,7 +613,7 @@ un nombre de connexions similaire.
 
 ![Courbes de saturation des NoC générés par le RWGAN (rouge) et le WGAN (noir).](../../assets/figures/thesis/ch05/fig-5-9.svg)
 
-**Fig. 5.9** — Courbes de saturation des NoC générés par le RWGAN (rouge) et le
+**Fig. 5.9** : Courbes de saturation des NoC générés par le RWGAN (rouge) et le
 WGAN (noir), après un entraînement de 250 époques training.
 
 Enfin, sur la figure [5.9](#fig-5-9), nous proposons de comparer les résultats

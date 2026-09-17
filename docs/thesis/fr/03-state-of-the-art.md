@@ -97,7 +97,7 @@ calcul.
 
 ![Modèle d'exécution simplifié d'une application.](../../assets/figures/thesis/ch03/fig-3-1.svg)
 
-**Fig. 3.1** — Modèle d'exécution simplifié d'une application.
+**Fig. 3.1** : Modèle d'exécution simplifié d'une application.
 
 Nous appelons "gouverneur" tout système de contrôle intervenant sur le système
 de calcul au niveau du runtime. La figure [3.1](#fig-3-1) décrit un modèle en
@@ -157,7 +157,7 @@ renforcement.
 | [\[158\]](references.md#ref-158) | 2021 | Scheduling | Deep RL | - | Performance des VM | Simulation IoT |
 | **My Work** | 2020 | DVFS<br>Mapping | Deep RL | Entrainement du AE training (si besoin) | Support OpenMP | Système multi-cœurs (e.g. Arm big.LITTLE, Intel Xeon E5) |
 
-**Tableau 3.1** — Comparaison de méthodes récentes de contrôle dynamique du
+**Tableau 3.1** : Comparaison de méthodes récentes de contrôle dynamique du
 calcul parallèle.
 
 #### 3.1.2.1 Vue d'ensemble des méthodes existantes
@@ -553,7 +553,7 @@ en garantissant un niveau de performances du réseau.
 
 ![Proposition de NoC hétérogènes par HeteroNoC](../../assets/figures/thesis/ch03/fig-3-2.png)
 
-**Fig. 3.2** — Proposition de NoC hétérogènes par *HeteroNoC*
+**Fig. 3.2** : Proposition de NoC hétérogènes par *HeteroNoC*
 [\[110\]](references.md#ref-110). source: [\[110\]](references.md#ref-110)
 
 Dans l'article [\[110\]](references.md#ref-110), Mishra *et al.* proposent une
@@ -618,7 +618,7 @@ indiquent le type des atomes et des connexions présents dans les molécules.
 
 ![Architecture de MolGAN pour la génération de molécules](../../assets/figures/thesis/ch03/fig-3-3.png)
 
-**Fig. 3.3** — Architecture de MolGAN pour la génération de molécules. source:
+**Fig. 3.3** : Architecture de MolGAN pour la génération de molécules. source:
 [\[38\]](references.md#ref-38)
 
 L'approche présentée dans MolGAN propose une architecture de GAN possédant un

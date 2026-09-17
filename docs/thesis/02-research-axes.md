@@ -181,7 +181,7 @@ and UNIX, which justifies its very widespread use.
 
 ![OpenMP: Fork and Join mechanisms](../assets/figures/thesis/ch02/fig-2-1.png)
 
-**Fig. 2.1** — OpenMP: *Fork* and *Join* mechanisms.
+**Fig. 2.1** : OpenMP: *Fork* and *Join* mechanisms.
 
 Parallelizm under OpenMP is mostly based on the use of lightweight processes,
 also called threads. There has existed, since the OpenMP 3.1 version, the
@@ -202,7 +202,7 @@ synchronize and are deleted so as to let only the master thread execute.
 
 ![Explanatory diagram of the chunk concept](../assets/figures/thesis/ch02/fig-2-2.svg)
 
-**Fig. 2.2** — Explanatory diagram of the chunk concept.
+**Fig. 2.2** : Explanatory diagram of the chunk concept.
 
 Among the features of OpenMP, we are interested in parallel loops (e.g. the
 *for* loop). Inside these loops, the workload is divided into blocks of
@@ -232,7 +232,7 @@ will therefore be those containing parallelizable *for* loops.
 
 ![Execution steps of an OpenMP workload](../assets/figures/thesis/ch02/fig-2-3.png)
 
-**Fig. 2.3** — Execution steps of an OpenMP workload.
+**Fig. 2.3** : Execution steps of an OpenMP workload.
 
 In figure [2.3](#fig-2-3) are described the different execution steps of an
 OpenMP workload made up of parallel loops, from the user level to the hardware
@@ -407,7 +407,7 @@ problems for which no satisfactory system model can be built.
 
 ![Concept diagram of RL](../assets/figures/thesis/ch02/fig-2-4.svg)
 
-**Fig. 2.4** — Concept diagram of RL.
+**Fig. 2.4** : Concept diagram of RL.
 
 In reinforcement learning, the control algorithm (in the sense of the code and
 its variables) is defined as the *agent*. The latter interacts with the
@@ -494,7 +494,7 @@ applications.
 
 ![Example of a multicore SoC architecture](../assets/figures/thesis/ch02/fig-2-5.svg)
 
-**Fig. 2.5** — Example of a multicore SoC architecture.
+**Fig. 2.5** : Example of a multicore SoC architecture.
 
 The interconnect module is the element making it possible to connect the whole
 set of components present in the system and is considered as the keystone of
@@ -538,7 +538,7 @@ that the analogy with graphs goes further.
 
 ![Example of a mesh topology with the architecture of input-buffered routers](../assets/figures/thesis/ch02/fig-2-6.png)
 
-**Fig. 2.6** — Example of a *mesh* topology with the architecture of
+**Fig. 2.6** : Example of a *mesh* topology with the architecture of
 input-buffered routers. *source:* [\[56\]](references.md#ref-56)
 
 Figure [2.6](#fig-2-6) extracted from the thesis of Charles Effiong
@@ -641,7 +641,7 @@ dimensioning of NoCs designed solely on the basis of these traffics
 
 ![Saturation curve of a network](../assets/figures/thesis/ch02/fig-2-7.svg)
 
-**Fig. 2.7** — Saturation curve of a network.
+**Fig. 2.7** : Saturation curve of a network.
 
 In order to evaluate the performance of a NoC in supporting a traffic, one
 defines the latency metric which designates the average time that a message
@@ -733,7 +733,7 @@ construction of a CAD tool serving for the creation of optimized NoCs.
 
 ![Representative diagram of a GAN](../assets/figures/thesis/ch02/fig-2-8.png)
 
-**Fig. 2.8** — Representative diagram of a GAN.
+**Fig. 2.8** : Representative diagram of a GAN.
 
 **Generative adversarial networks:** A GAN is a neural network architecture
 proposed for the first time in 2014 by Ian J. Goodfellow et al.

@@ -35,7 +35,7 @@ these limitations.
 
 ![Evolution over 48 years of commercially available microprocessors](../assets/figures/thesis/ch01/fig-1-1.svg)
 
-**Fig. 1.1** — Evolution over 48 years of commercially available
+**Fig. 1.1** : Evolution over 48 years of commercially available
 microprocessors. *source:* [\[147\]](references.md#ref-147)
 
 In response to these strong constraints, the design of computing systems
@@ -95,7 +95,7 @@ must be considered.
 
 ![Some of the levers to be considered for the optimization of a parallel computing system](../assets/figures/thesis/ch01/fig-1-2.png)
 
-**Fig. 1.2** — Some of the levers to be considered for the optimization of a
+**Fig. 1.2** : Some of the levers to be considered for the optimization of a
 parallel computing system. Figure taken from
 [\[87\]](references.md#ref-87)
 
@@ -202,7 +202,7 @@ answer the problem of the number of parameters.
 
 ![AI: an overview](../assets/figures/thesis/ch01/fig-1-3.svg)
 
-**Fig. 1.3** — AI: an overview
+**Fig. 1.3** : AI: an overview
 
 The field of artificial intelligence (AI), and more particularly the use of
 machine learning techniques, has developed considerably over the last decades.
@@ -271,7 +271,7 @@ photorealiztic portraits.
 
 ![Example of the progress of the generation capabilities of GANs, from 2014 to 2017](../assets/figures/thesis/ch01/fig-1-4.png)
 
-**Fig. 1.4** — Example of the progress of the generation capabilities of GANs,
+**Fig. 1.4** : Example of the progress of the generation capabilities of GANs,
 from 2014 to 2017. *source:* [\[34\]](references.md#ref-34)
 
 This field of generative AIs is particularly interesting for its faculties of
